@@ -10,8 +10,8 @@
   @include transition-duration(0.8s);
 }
 .isotope {
-  @include transition-property(height);
-  @include transition-property(width);
+//  @include transition-property(height);
+//  @include transition-property(width);
 }
 .isotope .isotope-item {
   @include transition-property(transform);
