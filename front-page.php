@@ -4,12 +4,12 @@
 
   <secion id="blocks">
 
-    <div id="vimeo" class="project project-double">
+    <div id="vimeo" class="project figure_block project-double">
       <iframe src="http://player.vimeo.com/video/49452532?title=0&amp;byline=0&amp;portrait=0&amp;color=00b4ec" width="1024" height="576" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
     </div>
 
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-    <a class="project intro" href="<?php the_field('link'); ?>" title="<?php the_field('link_text'); ?>">
+    <a class="project figure_block intro" href="<?php the_field('link'); ?>" title="<?php the_field('link_text'); ?>">
       <div>
         <p><?php the_field('text'); ?></p>
         <div class="figcaption">
