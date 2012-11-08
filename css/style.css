@@ -461,11 +461,11 @@ table {
         @media (min-width: 768px) {
           .main-nav .menu li:nth-child(2n) {
             margin-right: 1em; } }
-      .main-nav .menu li.current-menu-item a, .main-nav .menu li.current_page_item a, .main-nav .menu li.active a,
+      .main-nav .menu li.current-menu-item a, .main-nav .menu li.current_page_item a, .main-nav .menu li.current-page-ancestor a, .main-nav .menu li.active a,
       .main-nav .menu li a.active {
         background: #00b4ec;
         color: #fff; }
-        .main-nav .menu li.current-menu-item a:hover, .main-nav .menu li.current_page_item a:hover, .main-nav .menu li.active a:hover,
+        .main-nav .menu li.current-menu-item a:hover, .main-nav .menu li.current_page_item a:hover, .main-nav .menu li.current-page-ancestor a:hover, .main-nav .menu li.active a:hover,
         .main-nav .menu li a.active:hover {
           color: #fff;
           cursor: default; }
