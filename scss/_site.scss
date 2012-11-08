@@ -17,3 +17,291 @@ html, body {
     background: #b3d4fc;
     text-shadow: none;
 }
+
+a {
+  color: $blue;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: darken($blue, 10%);
+  }
+}
+
+body {
+  margin : 0;
+  padding : 0;
+  width : 100%;
+  background-color : transparent;
+  font-family : $basefont;
+  @include font-size(14);
+  line-height : $baselineheight;
+  color : $textcolor; 
+  @include background-size(contain);
+  background:url(../images/bg_mobile.jpg) fixed no-repeat center 0 #fff;
+
+  @include breakpoint(meerkat) {
+    background:url(../images/bg.jpg) fixed no-repeat center 0 #fff;
+  }
+  @include breakpoint(hippo) {
+    @include background-size(initial);
+  }
+}
+
+.page-wrap {
+  margin: 0 auto;
+  padding: 15px 0;
+  width: 90%;
+
+  @include breakpoint(meerkat) {
+    padding-top: 50px;
+  }
+  @include breakpoint(hippo) {
+    max-width: 1440px;
+  }
+}
+
+#logo { 
+  background: url(../images/logo.png) no-repeat 0 0 transparent;
+  width: 177px;
+  height: 60px;
+  position: relative;
+  display: block;
+  text-indent: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0; 
+  top: 0;
+}
+
+#blocks {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+#vimeo { margin-bottom: 30px; }
+
+figure {
+  margin-bottom : $baselineheight;
+
+  img {
+    margin-bottom : $baselineheight / 4; 
+  }
+}
+
+.sidebar > * {
+  margin-right: 10%;
+  .widget_title {
+    font-weight: 300;
+    margin: $baselineheight*2 0 0;
+  }
+}
+.has_img {
+  display: block;
+
+  &:hover {
+
+  }
+}
+
+/* COLUMNS */
+.grid {
+  @extend .cf;
+  margin: 0 0 $columnpad 0;
+}
+
+[class*='col-'] {
+  float: left;
+  padding-right: $columnpad;
+  .grid &:last-of-type {
+    padding-right: 0;
+  }
+}
+.col-2-3 {
+  width: 66.66%;
+}
+.col-1-3 {
+  width: 33.33%;
+}
+.col-1-2 {
+  width: 50%;
+}
+.col-1-4 {
+  width: 25%;
+}
+.col-1-8 {
+  width: 12.5%;
+}
+
+/* Opt-in outside padding */
+.grid-pad {
+  padding: $columnpad 0 $columnpad $columnpad;
+  [class*='col-']:last-of-type {
+    padding-right: $columnpad;
+  }
+}
+
+
+
+
+
+/* PROJECTS */
+.figure_block {
+  width: 98.5%;
+  height: auto;
+  margin: 0 .75% .75em;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-decoration:none;
+
+  .sidebar & {
+    width: 98.5%;
+    margin-top: $baselineheight;
+  }
+
+  &.project-double {
+    width: 98.5%;
+  }
+
+  @include breakpoint(snail) {
+    width: 48.5%;
+  }
+  @include breakpoint(meerkat) {
+    width: 31.8%;
+    &.project-double {
+      width: 65.1%;
+    }
+  }
+  @include breakpoint(hippo) {
+    width: 23.5%;
+    &.project-double {
+      width: 47%;
+    }
+  }
+
+  &.intro div {
+
+    &:hover {
+
+      p {
+        color: $darkergrey;
+      }
+
+      .figcaption p {
+        color: $blue !important;
+      }
+    }
+
+    p {
+      @include background(radial-gradient(#fff,#f1f1f1));
+      padding: 13px;    
+      color: #000;
+    }
+    a:hover {
+      color: darken($blue, 10%);
+      text-decoration: none;
+    }
+    
+  }
+
+  .case_study:before {
+    content: 'cs';
+    position: absolute;
+    top: 0px;
+    right: 16px;
+    height: 19px;
+    width: 26px;
+    background: $blue;
+    color: #fff;
+    text-align: center;
+    padding-top: 14px;
+    z-index: 500;
+  }
+ 
+  img {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .overlay {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    display: block;
+    opacity: 0;
+    @include transition(opacity .5s ease);
+
+  }
+
+  &:hover {
+    text-decoration: none;
+
+    h2, p {
+      color: $blue;
+    }
+
+    .overlay {
+      opacity: 1;
+    }
+  }
+
+  div .figcaption,
+  figcaption {
+    border-top: 1px solid lighten(black, 75%);
+    border-bottom: 1px solid lighten(black, 60%);
+    padding: .5em 0;
+     
+     h2, p, a {
+      @include font-size(12);
+      @include transition(all .25s ease);
+      color: lighten(black, 40%);;
+      margin: 0;
+      text-transform: uppercase;
+      background: transparent !important;
+      padding: 0;
+     }
+  }
+}
+
+
+
+/* ENTRIES */
+.entry {
+  background: rgba(white, .8);
+  padding: 15px;
+  margin: -15px;
+
+  h2, h3 {
+    margin: $baselineheight 0 $baselineheight/4;
+    font-weight: 300;
+  }
+
+  p {
+    margin: 0 0 $baselineheight;
+    @include font-size(13);
+  }
+  .figcaption {
+    margin: 0 0 1em;
+  }
+
+}
+
+#project_entry > p {
+  @include font-size(15);
+}
+
+
+/* PAGES */
+.page_title {  
+  @include font-size(27);
+  color: $blue;
+  font-weight: 300;
+  line-height: 32px;
+  background: rgba(white,.8);
+  border-top: 1px solid lighten(black, 85%);
+  border-bottom: 1px solid lighten(black, 50%);
+  padding: 10px 0 4px;
+  margin: 0 0 $baselineheight;
+}

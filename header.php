@@ -22,10 +22,14 @@
 
   <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
-  <script src="//use.typekit.net/xdb0ddk.js"></script>
+  <script src="//use.typekit.net/zwq0cfa.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
 
   <?php wp_head(); ?>
+
+  <!--[if (lt IE 9) & (!IEMobile)]>
+<script src="js/selectivizr-min.js"></script>
+<![endif]-->
   
 </head>
 
@@ -34,19 +38,22 @@
     <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
   <![endif]-->
   
-  <div class="page-wrap">
+<div class="page-wrap">
+  
+  <header class="header cf">
+    <h1><a id="logo" href="<?php home_url(); ?>/"><?php bloginfo('name'); ?></a></h1>
+  </header>
+  <nav class="main-nav cf">
+    <?php if ( is_front_page() ) : ?>
+      <ul class="menu filters cf" id="filters">
+        <li><a href="#" data-filter="*" class="active">Our Work</a></li>
+        <li><a href="#" data-filter=".case-study">Case Studies</a></li>
+        <li><a href="#" data-filter=".branding">Branding</a></li>
+        <li><a href="#" data-filter=".website">Websites</a></li>
+      </ul>
+  <?php endif; ?>
+    <?php wp_nav_menu( array( 'theme_location' => 'main-nav', 'container' => '' ) ); ?>
+  </nav>
+  
+  <section class="main-content cf grid">
     
-    <header class="header">
-      <?php if ( is_front_page() ) : ?>
-        <h1 id="logo"><?php bloginfo('name'); ?></h1>
-      <?php else : ?>
-        <h1><a id="logo" href="<?php home_url(); ?>/"><?php bloginfo('name'); ?></a></h1>
-      <?php endif; ?>
-      <h2><?php bloginfo('description'); ?></h2>
-    </header>
-
-    <nav class="main-nav">
-      <?php wp_nav_menu( array( 'theme_location' => 'main-nav' ) ); ?>
-    </nav>
-    
-    <section class="main-content">

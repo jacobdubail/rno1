@@ -1,9 +1,5 @@
-<div class="sidebar">
+<div class="sidebar col-1-3">
 
-    <?php dynamic_sidebar('Sidebar Widgets')) : else : ?>
-    
-        ;(
-	
-	<?php endif; ?>
+    <?php dynamic_sidebar('Sidebar Widgets'); ?>
 
 </div>

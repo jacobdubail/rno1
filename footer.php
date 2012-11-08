@@ -1,10 +1,12 @@
-      </section>
+  </section>
 
-      <footer class="footer">
-        <small>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?></small>
-      </footer>
+  <footer class="footer cf">
+    <?php dynamic_sidebar('Footer Widgets'); ?>
+  </footer>
 
-    </div>
+  
+
+</div>
 
 <?php wp_footer(); ?>
 

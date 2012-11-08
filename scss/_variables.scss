@@ -1,2 +1,15 @@
 $heading      : hsl(190, 33%, 50%);
 $headingHover : hsl(174,24%,50%);
+$darkergrey   : lighten(black, 25%);
+$blue         : rgb(0,180,236);
+
+$basecolor    : rgb(45,53,62);
+$compcolor    : adjust-hue($basecolor, 180);
+$bordercolor  : lighten($basecolor, 60%);
+$textcolor    : lighten(black, 42.75%);
+
+
+$basefont : "museo-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$baselineheight : 1.41em;
+
+$columnpad: 15px;
