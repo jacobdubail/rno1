@@ -52,7 +52,10 @@ display:block
 }
 
 .carousel .active {
-left:0
+  left:0;
+  img {
+    width: 100%;
+  }
 }
 
 .carousel .next,.carousel .prev {

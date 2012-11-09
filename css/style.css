@@ -567,6 +567,8 @@ table {
 
 .carousel .active {
   left: 0; }
+  .carousel .active img {
+    width: 100%; }
 
 .carousel .next, .carousel .prev {
   position: absolute;
