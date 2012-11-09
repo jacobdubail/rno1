@@ -115,6 +115,7 @@
 }
 
 
+.sidebar .widget_recent_entries ul,
 .sidebar .menu {
   margin: 0 0 20px 0;
   padding: 0;
@@ -129,8 +130,8 @@
       @include font-size(12);
       font-weight: 300;
       display: block;
-      padding: 0 5px;
-      line-height: $baselineheight * 1.5;
+      padding: $baselineheight/3 5px;
+      line-height: $baselineheight;
       color: #666;
       text-decoration: none;
       &:hover {

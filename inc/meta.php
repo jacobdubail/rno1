@@ -1,5 +1,5 @@
-<footer class="meta">
-	<time datetime="<?php echo date(DATE_W3C); ?>" pubdate class="updated"><?php the_time('F jS, Y') ?></time>
+<p class="meta">
+	<time datetime="<?php echo date(DATE_W3C); ?>" pubdate class="updated"><?php the_time('j.n.y') ?></time>
 	&mdash;
-  <?php the_category(' '); ?>
-</footer>
+  <?php swift_list_cats(3); ?>
+</p>

@@ -99,14 +99,20 @@ left:100%
   z-index: 100;
 
   &.left {
-    right: 41px;
+    right: 36px;
     background-position: 0 0;
+    @include breakpoint(snail) {
+      right: 55px;
+    }
     &:hover {
       background-position: 0 -17px;
     }
   }
   &.right {
-    right: 15px;
+    right: 9px;
+    @include breakpoint(snail) {
+      right: 28px;
+    }
     background-position: -26px 0;
     &:hover {
       background-position: -26px -17px;
