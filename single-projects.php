@@ -26,7 +26,7 @@
         if(get_field('slide')): 
       ?>
 
-        <div class="carousel slide" id="project_carousel"> 
+        <div class="carousel slide col-2-3" id="project_carousel"> 
           <div class="carousel-inner">   
           <?php while ( the_repeater_field( 'slide' ) ): ?>
             <div class="item <?php echo $active; $active = ''; ?>">
@@ -45,12 +45,14 @@
        
       <?php endif; ?>
       
-      <div class="entry" id="project_entry">
+      <div class="col-1-3 project_entry">
         <header class="figcaption">
             <h2><?php the_title(); ?></h2>
             <p><?php echo $types; ?></p>
           </header>
-        <?php the_content(); ?>
+        <article>
+          <?php the_content(); ?>
+        </article>
       </div>
             
     </article>

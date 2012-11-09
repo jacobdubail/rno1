@@ -6,7 +6,9 @@
 			
 		<article class="post col-2-3" id="post-<?php the_ID(); ?>">
 
-			<h1 class="page_title"><?php the_title(); ?></h1>
+			<header class="figcaption">
+				<h1 class="page_title"><?php the_title(); ?></h1>
+			</header>
 
 			<div class="entry">
 

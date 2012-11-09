@@ -12,17 +12,17 @@
   }
 
   @include breakpoint(zebra) {
-    float: left;
-    width: 60%;
-    margin-right: 2%;
+  //  float: left;
+  //  width: 60%;
+  //  margin-right: 2%;
 
     li {
 
     }
 
     & + .entry {
-      float: right;
-      width: 38%;
+    //  float: right;
+    //.,  width: 38%;
     }
   }
 }
@@ -84,7 +84,7 @@ left:100%
 
 .carousel-control {
   position:absolute;
-  bottom:29px;
+  bottom:26px;
   right: 0;
   text-indent: 10px;
   white-space:nowrap;
@@ -96,13 +96,14 @@ left:100%
   z-index: 100;
 
   &.left {
-    right: 26px;
+    right: 41px;
     background-position: 0 0;
     &:hover {
       background-position: 0 -17px;
     }
   }
   &.right {
+    right: 15px;
     background-position: -26px 0;
     &:hover {
       background-position: -26px -17px;

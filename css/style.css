@@ -544,14 +544,6 @@ table {
     list-style: none; }
     .carousel li img {
       width: 100%; }
-  @media (min-width: 992px) {
-    .carousel {
-      float: left;
-      width: 60%;
-      margin-right: 2%; }
-      .carousel + .entry {
-        float: right;
-        width: 38%; } }
 
 .carousel-inner {
   overflow: hidden;
@@ -599,7 +591,7 @@ table {
 
 .carousel-control {
   position: absolute;
-  bottom: 29px;
+  bottom: 26px;
   right: 0;
   text-indent: 10px;
   white-space: nowrap;
@@ -610,11 +602,12 @@ table {
   height: 15px;
   z-index: 100; }
   .carousel-control.left {
-    right: 26px;
+    right: 41px;
     background-position: 0 0; }
     .carousel-control.left:hover {
       background-position: 0 -17px; }
   .carousel-control.right {
+    right: 15px;
     background-position: -26px 0; }
     .carousel-control.right:hover {
       background-position: -26px -17px; }
@@ -658,35 +651,38 @@ table {
     top: 68px;
     left: .75%;
     right: .75%;
-    display: block;
+    display: none;
     background: #999; }
-  .footer .col-1-3 {
-    float: left;
-    width: 30%;
-    margin-left: 3%; }
-    .footer .col-1-3:first-child {
-      margin-left: 0; }
-  .footer .widget * {
-    font-size: 12px;
-    color: #666666; }
-  .footer .widget h3 {
-    color: #00b4ec;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 300;
-    position: relative;
-    margin: 0 0 22px; }
-  .footer .widget ul {
-    padding: 0; }
-  .footer .widget li {
-    margin: 0 0 7px;
-    padding: 0 0 3px;
-    border-bottom: 1px solid #e6e6e6;
-    list-style: none; }
-  .footer .widget a {
-    color: #666666; }
-    .footer .widget a:hover {
-      color: #00b4ec; }
+    @media (min-width: 768px) {
+      .footer:after {
+        display: block; } }
+  .footer .widget {
+    margin-bottom: 1.41em; }
+    .footer .widget * {
+      font-size: 12px;
+      color: #666666; }
+    .footer .widget h3 {
+      color: #00b4ec;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 300;
+      position: relative;
+      margin: 0 0 22px;
+      border-bottom: 1px solid #999; }
+      @media (min-width: 768px) {
+        .footer .widget h3 {
+          border-bottom: none; } }
+    .footer .widget ul {
+      padding: 0; }
+    .footer .widget li {
+      margin: 0 0 7px;
+      padding: 0 0 3px;
+      border-bottom: 1px solid #e6e6e6;
+      list-style: none; }
+    .footer .widget a {
+      color: #666666; }
+      .footer .widget a:hover {
+        color: #00b4ec; }
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -710,6 +706,9 @@ a {
   text-decoration: none; }
   a:hover, a:focus {
     color: #008db9; }
+
+p {
+  margin: 0 0 1.41em; }
 
 body {
   margin: 0;
@@ -791,10 +790,16 @@ figure {
     padding-right: 0; }
 
 .col-2-3 {
-  width: 66.66%; }
+  width: 100%; }
+  @media (min-width: 768px) {
+    .col-2-3 {
+      width: 66.66%; } }
 
 .col-1-3 {
-  width: 33.33%; }
+  width: 100%; }
+  @media (min-width: 768px) {
+    .col-1-3 {
+      width: 33.33%; } }
 
 .col-1-2 {
   width: 50%; }
@@ -887,25 +892,30 @@ figure {
       color: #00b4ec; }
     .figure_block:hover .overlay {
       opacity: 1; }
-  .figure_block div .figcaption,
-  .figure_block figcaption {
-    border-top: 1px solid #bfbfbf;
-    border-bottom: 1px solid #999999;
-    padding: .5em 0; }
-    .figure_block div .figcaption h2, .figure_block div .figcaption p, .figure_block div .figcaption a,
-    .figure_block figcaption h2,
-    .figure_block figcaption p,
-    .figure_block figcaption a {
-      font-size: 12px;
-      -webkit-transition: all 0.25s ease;
-      -moz-transition: all 0.25s ease;
-      -o-transition: all 0.25s ease;
-      transition: all 0.25s ease;
-      color: #666666;
-      margin: 0;
-      text-transform: uppercase;
-      background: transparent !important;
-      padding: 0; }
+
+div .figcaption,
+figcaption {
+  border-top: 1px solid #bfbfbf;
+  border-bottom: 1px solid #999999;
+  padding: .5em 0; }
+  div .figcaption h2, div .figcaption p, div .figcaption a,
+  figcaption h2,
+  figcaption p,
+  figcaption a {
+    font-size: 12px;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    color: #666666;
+    margin: 0;
+    text-transform: uppercase;
+    background: transparent !important;
+    padding: 0; }
+
+header.figcaption {
+  background: rgba(255, 255, 255, 0.5);
+  margin: 0 0 0.705em; }
 
 /* ENTRIES */
 .entry {
@@ -921,8 +931,10 @@ figure {
   .entry .figcaption {
     margin: 0 0 1em; }
 
-#project_entry > p {
-  font-size: 15px; }
+.project_entry article {
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 0.705em 0; }
 
 /* PAGES */
 .page_title {
@@ -930,8 +942,4 @@ figure {
   color: #00b4ec;
   font-weight: 300;
   line-height: 32px;
-  background: rgba(255, 255, 255, 0.8);
-  border-top: 1px solid #d9d9d9;
-  border-bottom: 1px solid gray;
-  padding: 10px 0 4px;
-  margin: 0 0 1.41em; }
+  margin: 0; }
