@@ -1188,7 +1188,9 @@ input[type=submit] {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
   color: #fbfbfb;
-  background: #00BDF2; }
+  background: #00BDF2;
+  padding: 5px 10px;
+  border: 1px solid #BCBCBC; }
   input[type=submit].gform_button {
     float: right;
     width: 45%;
