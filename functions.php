@@ -377,16 +377,20 @@ function aq_resize( $url, $width, $height = null, $crop = null, $single = true )
 
 
 
-function swift_list_cats( $num=3 ) {
+function swift_list_cats( $num = 4 ) {
   $temp       = get_the_category();
   $count      = count( $temp );// Getting the total number of categories the post is filed in.
   $cat_string = NULL;
   for ( $i = 0; $i < $num && $i < $count; $i++ ) {
 
-    $cat_string .= '<a href="'.get_category_link( $temp[$i]->cat_ID  ).'">'.$temp[$i]->cat_name.'</a>';
-    if ( $i != $num-1 && $i+1 < $count )
-      $cat_string.=', ';
+    if ( strtolower( $temp[$i]->cat_name ) != "blog" ) :
+
+      $cat_string .= '<a href="'.get_category_link( $temp[$i]->cat_ID  ).'">'.$temp[$i]->cat_name.'</a>';
+      if ( $i != $num-1 && $i+1 < $count )
+        $cat_string.=', ';
+
+    endif;
   
-  }
+  } // end for
   echo $cat_string;
 }
