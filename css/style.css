@@ -1074,6 +1074,21 @@ header.figcaption {
     left: 0;
     font-weight: 300; }
 
+input, textarea {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fbfbfb), color-stop(100%, #f7f7f7));
+  background: -webkit-linear-gradient(top, #fbfbfb, #f7f7f7);
+  background: -moz-linear-gradient(top, #fbfbfb, #f7f7f7);
+  background: -o-linear-gradient(top, #fbfbfb, #f7f7f7);
+  background: linear-gradient(top, #fbfbfb, #f7f7f7);
+  padding: 5px 10px;
+  border: 1px solid #BCBCBC;
+  width: 440px; }
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+  height: 100px; }
+
 /* GRAVITY FORMS */
 #wpcf7-f1039-p65-o1 {
   float: left;
@@ -1103,7 +1118,8 @@ header.figcaption {
   margin-bottom: 15px; }
 
 .gfield {
-  margin-bottom: 23px; }
+  margin-bottom: 23px;
+  list-style: none; }
 
 .ginput_price {
   display: none; }
@@ -1123,11 +1139,16 @@ header.figcaption {
 
 .ginput_container label {
   top: 2px;
-  width: 140px; }
+  width: 140px;
+  position: relative; }
 
 .gfield .instruction,
 .gfield .gfield_description {
   color: #999; }
+
+.gform_fields {
+  margin: 0;
+  padding: 0; }
 
 .gform_fields li.one-half {
   width: 400px;
@@ -1158,6 +1179,9 @@ header.figcaption {
   -moz-column-width: 250px;
   column-count: 2;
   column-column-width: 250px; }
+
+.gfield_radio li {
+  list-style: none; }
 
 .gfield_checkbox li {
   margin-bottom: 9px; }
