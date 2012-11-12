@@ -1,4 +1,12 @@
-input[type=text],input[type=password],input[type=email] input[type=number] input[type=tel] input[type=search] input[type=url] input[type=date],textarea {
+input[type=text],
+input[type=password],
+input[type=email], 
+input[type=number], 
+input[type=tel], 
+input[type=search], 
+input[type=url], 
+input[type=date],
+textarea {
   @include background(linear-gradient(top, #fbfbfb, #f7f7f7));
   padding: 5px 10px;
   border: 1px solid #BCBCBC;

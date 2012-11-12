@@ -1074,7 +1074,15 @@ header.figcaption {
     left: 0;
     font-weight: 300; }
 
-input[type=text], input[type=password], input[type=email] input[type=number] input[type=tel] input[type=search] input[type=url] input[type=date], textarea {
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=number],
+input[type=tel],
+input[type=search],
+input[type=url],
+input[type=date],
+textarea {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fbfbfb), color-stop(100%, #f7f7f7));
   background: -webkit-linear-gradient(top, #fbfbfb, #f7f7f7);
   background: -moz-linear-gradient(top, #fbfbfb, #f7f7f7);
