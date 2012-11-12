@@ -13,6 +13,9 @@ textarea {
   border: 1px solid #BCBCBC;
   max-width: 440px;
   width: 100%;
+  &:focus {
+    background: #fff; 
+  }
 }
 
 textarea {
@@ -22,7 +25,7 @@ textarea {
   resize: vertical;
   height: 100px;
 }
-
+input[type=button]:hover { color: #fbfbfb; background: #00BDF2; }
 
 /* GRAVITY FORMS */
 .gform_wrapper .validation_error,.gform_wrapper .validation_message {
@@ -147,12 +150,13 @@ input[type=submit] {
     margin-left: 0;
   }
   &:hover {
-    @include transform(scale(1.05));
     @include background(linear-gradient(top,#fbfbfb,#f7f7f7));
-    color: #292929;
     background: #F7F7F7;
+    color: #292929;
   }
 }
+
+
 
 
 

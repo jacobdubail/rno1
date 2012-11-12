@@ -1093,6 +1093,17 @@ textarea {
   border: 1px solid #BCBCBC;
   max-width: 440px;
   width: 100%; }
+  input[type=text]:focus,
+  input[type=password]:focus,
+  input[type=email]:focus,
+  input[type=number]:focus,
+  input[type=tel]:focus,
+  input[type=search]:focus,
+  input[type=url]:focus,
+  input[type=date]:focus,
+  input[type="button"]:focus,
+  textarea:focus {
+    background: #fff; }
 
 textarea {
   overflow: auto;
@@ -1100,6 +1111,10 @@ textarea {
   -moz-resize: vertical;
   resize: vertical;
   height: 100px; }
+
+input[type=button]:hover {
+  color: #fbfbfb;
+  background: #00BDF2; }
 
 /* GRAVITY FORMS */
 .gform_wrapper .validation_error, .gform_wrapper .validation_message {
@@ -1207,18 +1222,13 @@ input[type=submit] {
     width: 45%;
     margin-left: 0; }
   input[type=submit]:hover {
-    -webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    transform: scale(1.05);
     background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fbfbfb), color-stop(100%, #f7f7f7));
     background: -webkit-linear-gradient(top, #fbfbfb, #f7f7f7);
     background: -moz-linear-gradient(top, #fbfbfb, #f7f7f7);
     background: -o-linear-gradient(top, #fbfbfb, #f7f7f7);
     background: linear-gradient(top, #fbfbfb, #f7f7f7);
-    color: #292929;
-    background: #F7F7F7; }
+    background: #F7F7F7;
+    color: #292929; }
 
 .gfield.gsection {
   text-indent: -9999em;
