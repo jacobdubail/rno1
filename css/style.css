@@ -1082,6 +1082,7 @@ input[type=tel],
 input[type=search],
 input[type=url],
 input[type=date],
+input[type="button"],
 textarea {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fbfbfb), color-stop(100%, #f7f7f7));
   background: -webkit-linear-gradient(top, #fbfbfb, #f7f7f7);
@@ -1198,8 +1199,10 @@ input[type=submit] {
   color: #fbfbfb;
   background: #00BDF2;
   padding: 5px 10px;
-  border: 1px solid #BCBCBC; }
-  input[type=submit].gform_button {
+  border: 1px solid #BCBCBC;
+  width: 100%;
+  max-width: 440px; }
+  #gform_1 input[type=submit] {
     float: right;
     width: 45%;
     margin-left: 0; }
