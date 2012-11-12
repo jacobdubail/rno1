@@ -1239,7 +1239,8 @@ input[type=submit] {
   clear: both; }
 
 .gform_page_footer {
-  position: relative; }
+  position: relative;
+  max-width: 960px; }
 
 .gform_wrapper .gform_ajax_spinner {
   position: absolute;
