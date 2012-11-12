@@ -383,7 +383,7 @@ function swift_list_cats( $num=3 ) {
   $cat_string = NULL;
   for ( $i = 0; $i < $num && $i < $count; $i++ ) {
 
-    $cat_string .= '<a href=&quot;'.get_category_link( $temp[$i]->cat_ID  ).'&quot;>'.$temp[$i]->cat_name.'</a>';
+    $cat_string .= '<a href="'.get_category_link( $temp[$i]->cat_ID  ).'">'.$temp[$i]->cat_name.'</a>';
     if ( $i != $num-1 && $i+1 < $count )
       $cat_string.=', ';
   
