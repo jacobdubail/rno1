@@ -680,7 +680,7 @@ table {
         left: 0;
         height: 1px;
         display: block;
-        background: #999;
+        background: #e6e6e6;
         width: 300%; }
     .footer .widget * {
       font-size: 12px;
@@ -703,6 +703,8 @@ table {
       padding: 0 0 3px;
       border-bottom: 1px solid #e6e6e6;
       list-style: none; }
+      .footer .widget li:last-child {
+        border-bottom: none; }
     .footer .widget a {
       color: #666666; }
       .footer .widget a:hover {
