@@ -29,11 +29,22 @@
   }
 
   .widget {
-    margin-bottom: $baselineheight;
+    margin-bottom: $baselineheight*1.5;
+    padding-top: $baselineheight/4;
 
     &:nth-child(4) {
       clear: both;
-      margin-top: $baselineheight;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: -12px;
+        left: 0;
+        height: 1px;
+        display: block;
+        background: #999;
+        width: 300%;
+      }
     }
     * {
       font-size: 12px;
