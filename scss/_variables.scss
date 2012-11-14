@@ -1,7 +1,7 @@
 $heading      : hsl(190, 33%, 50%);
 $headingHover : hsl(174,24%,50%);
 $darkergrey   : lighten(black, 25%);
-$blue         : rgb(0,180,236);
+$blue         : #00BDF2;
 
 $basecolor    : rgb(45,53,62);
 $compcolor    : adjust-hue($basecolor, 180);

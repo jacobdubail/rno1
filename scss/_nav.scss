@@ -11,9 +11,9 @@
     @include breakpoint(meerkat) {
       float: left;
 
-      .home & {
-        float: right;
-      }
+      // .home & {
+      //   float: right;
+      // }
     }
 
     li {
@@ -102,7 +102,7 @@
     display: none;
     @include breakpoint(meerkat) {
       display: block;
-      float: left !important;
+      float: right !important;
     }
   }
 

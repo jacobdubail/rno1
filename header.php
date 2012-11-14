@@ -44,6 +44,7 @@
     <h1><a id="logo" href="<?php home_url(); ?>/"><?php bloginfo('name'); ?></a></h1>
   </header>
   <nav class="main-nav cf">
+    <?php wp_nav_menu( array( 'theme_location' => 'main-nav', 'container' => '' ) ); ?>
     <?php if ( is_front_page() ) : ?>
       <ul class="menu filters cf" id="filters">
         <li><a href="#" data-filter="*" class="active">Our Work</a></li>
@@ -51,8 +52,7 @@
         <li><a href="#" data-filter=".branding">Branding</a></li>
         <li><a href="#" data-filter=".website">Websites</a></li>
       </ul>
-  <?php endif; ?>
-    <?php wp_nav_menu( array( 'theme_location' => 'main-nav', 'container' => '' ) ); ?>
+    <?php endif; ?>
   </nav>
   
   <section class="main-content cf grid">
