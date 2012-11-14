@@ -105,7 +105,7 @@ figure {
 
   .widget_title {
     font-weight: 300;
-    margin: 0;
+    margin: $baselineheight 0 0;
   }
 }
 #recent-posts-3 h4,
@@ -180,7 +180,7 @@ figure {
 
   .sidebar & {
     width: 98.5%;
-    margin-top: $baselineheight;
+    //margin-top: $baselineheight;
   }
 
   &.project-double {

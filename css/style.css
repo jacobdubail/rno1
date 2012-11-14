@@ -841,7 +841,7 @@ figure {
   margin-bottom: 2.82em; }
 .sidebar .widget_title {
   font-weight: 300;
-  margin: 0; }
+  margin: 1.41em 0 0; }
 
 #recent-posts-3 h4,
 #recent-posts-4 h4 {
@@ -897,8 +897,7 @@ figure {
   position: relative;
   text-decoration: none; }
   .sidebar .figure_block {
-    width: 98.5%;
-    margin-top: 1.41em; }
+    width: 98.5%; }
   .figure_block.project-double {
     width: 98.5%; }
   @media (min-width: 480px) {
