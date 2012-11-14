@@ -659,7 +659,7 @@ table {
     content: '';
     height: 1px;
     position: absolute;
-    top: 68px;
+    top: 71px;
     left: .75%;
     right: .75%;
     display: none;
@@ -671,7 +671,8 @@ table {
     margin-bottom: 2.115em;
     padding-top: 0.3525em; }
     .footer .widget:nth-child(4) {
-      clear: both; }
+      clear: both;
+      position: relative; }
       .footer .widget:nth-child(4):before {
         content: '';
         position: absolute;
@@ -690,7 +691,7 @@ table {
       font-size: 12px;
       font-weight: 300;
       position: relative;
-      margin: 0 0 22px;
+      margin: 0 0 12px;
       border-bottom: 1px solid #999; }
       @media (min-width: 768px) {
         .footer .widget h3 {
