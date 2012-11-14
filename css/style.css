@@ -673,15 +673,16 @@ table {
     .footer .widget:nth-child(4) {
       clear: both;
       position: relative; }
-      .footer .widget:nth-child(4):before {
-        content: '';
-        position: absolute;
-        top: -12px;
-        left: 0;
-        height: 1px;
-        display: block;
-        background: #e6e6e6;
-        width: 300%; }
+      @media (min-width: 768px) {
+        .footer .widget:nth-child(4):before {
+          content: '';
+          position: absolute;
+          top: 26px;
+          left: 0;
+          height: 1px;
+          display: block;
+          background: #999;
+          width: 300%; } }
     .footer .widget * {
       font-size: 12px;
       color: #666666; }
