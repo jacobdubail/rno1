@@ -880,7 +880,8 @@ figure {
   width: 50%; }
 
 .col-1-4 {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 2.115em; }
   .col-1-4 header span {
     height: 20px !important; }
   @media (min-width: 768px) {
