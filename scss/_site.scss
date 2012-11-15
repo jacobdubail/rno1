@@ -391,6 +391,7 @@ header.figcaption {
     height: 50px;
 
     .single & {
+      height: 70px;
       margin-bottom: 170px;
       @include breakpoint(meerkat) {
         margin-bottom: 220px;
@@ -406,7 +407,7 @@ header.figcaption {
       height: 140px;
       
       .single & {
-//        top: 80px;
+        top: 20px;
         height: 140px;
         @include breakpoint(meerkat) {
           height: 190px;

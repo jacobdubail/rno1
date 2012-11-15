@@ -1056,6 +1056,7 @@ header.figcaption {
   .post header {
     height: 50px; }
     .single .post header {
+      height: 70px;
       margin-bottom: 170px; }
       @media (min-width: 768px) {
         .single .post header {
@@ -1072,6 +1073,7 @@ header.figcaption {
       left: 0;
       height: 140px; }
       .single .post header span {
+        top: 20px;
         height: 140px; }
         @media (min-width: 768px) {
           .single .post header span {
