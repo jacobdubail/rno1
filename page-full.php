@@ -14,7 +14,7 @@ Template Name: Full Width
 				<h1 class="page_title"><?php the_title(); ?></h1>
 			</header>
 
-			<div class="entry">
+			<div class="entry cf">
 
 				<?php the_content(); ?>
 
