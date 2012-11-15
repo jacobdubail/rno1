@@ -388,6 +388,7 @@ header.figcaption {
   }
 
   header {
+    height: 50px;
 
     .single & {
       margin-bottom: 170px;
@@ -398,18 +399,14 @@ header.figcaption {
 
     span {
       @include background(radial-gradient(#D6D2D2,#c3bfbf 63%));
-      position: absolute;
-      top: 0;
+      position: relative;
+      display: block;
+      top: -182px;
       left: 0;
-      right: 0;
       height: 140px;
-      @include breakpoint(kitteh) {
-        right: 21px;
-      }
       
       .single & {
-        right: 0;
-        top: 80px;
+//        top: 80px;
         height: 140px;
         @include breakpoint(meerkat) {
           height: 190px;
