@@ -1064,8 +1064,11 @@ header.figcaption {
     position: absolute;
     top: 0;
     left: 0;
-    right: 15px;
+    right: 0;
     height: 140px; }
+    @media (min-width: 768px) {
+      .post header span {
+        right: 21px; } }
     .single .post header span {
       right: 0;
       top: 80px;

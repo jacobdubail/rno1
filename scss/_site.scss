@@ -398,8 +398,11 @@ header.figcaption {
       position: absolute;
       top: 0;
       left: 0;
-      right: 15px;
+      right: 0;
       height: 140px;
+      @include breakpoint(meerkat) {
+        right: 21px;
+      }
       
       .single & {
         right: 0;
