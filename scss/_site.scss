@@ -147,7 +147,7 @@ figure {
   @include breakpoint(meerkat) {
     width: 50%;
   }
-  @include breakpoint(zebra) {
+  @include breakpoint(snail) {
     width: 33.33%;
   }
 }
