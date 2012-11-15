@@ -145,6 +145,9 @@ figure {
 .col-1-3 {
   width: 100%;
   @include breakpoint(meerkat) {
+    width: 50%;
+  }
+  @include breakpoint(zebra) {
     width: 33.33%;
   }
 }
