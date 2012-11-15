@@ -1119,7 +1119,8 @@ header.figcaption {
   .post.col-1-3 .entry {
     min-height: 200px; }
     .post.col-1-3 .entry .post_intro {
-      display: none; }
+      display: none;
+      margin: 0; }
   .post.col-1-3 .more-link {
     display: block;
     position: absolute;
