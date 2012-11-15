@@ -8,7 +8,7 @@ Template Name: Full Width
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			
-		<article class="post" id="post-<?php the_ID(); ?>">
+		<article class="post" id="page-<?php the_ID(); ?>">
 
 			<header class="figcaption">
 				<h1 class="page_title"><?php the_title(); ?></h1>

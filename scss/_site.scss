@@ -414,6 +414,10 @@ header.figcaption {
         }
       }
 
+      .page & {
+        top: -55px;
+      }
+
       &.green {
         @include background(radial-gradient(#E4F1E7,#d2e2d6 63%));
       }

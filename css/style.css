@@ -1078,6 +1078,8 @@ header.figcaption {
         @media (min-width: 768px) {
           .single .post header span {
             height: 190px; } }
+      .page .post header span {
+        top: -55px; }
       .post header span.green {
         background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 63, color-stop(0%, #e4f1e7), color-stop(63%, #d2e2d6));
         background: -webkit-radial-gradient(#e4f1e7, #d2e2d6 63%);
