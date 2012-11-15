@@ -167,9 +167,21 @@ function rno1_register_tax() {
 
 function rno1_get_blocks( $query ) {
   if ( $query->is_main_query() && $query->is_home() ) {
-    $query->set( 'meta_key', 'text' );
-    $query->set( 'post_type', 'page' );
-    $query->set( 'orderby', 'meta_value' );
+    $query->set( 'post_type',    'page' );
+//    $query->set( 'meta_key',     'text' );
+//    $query->set( 'meta_value',   '' );
+//    $query->set( 'meta_compare', '!=' );
+//    $query->set( 'orderby',      'meta_value' );
+    $metaq = array(
+        array(
+          'key'     => 'text',
+          'value'   => '',
+          'type'    => 'string',
+          'compare' => '!='
+        )
+      );
+    $query->set('meta_query', $metaq );
+  
   }
 }
 add_action( 'pre_get_posts', 'rno1_get_blocks' );

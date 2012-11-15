@@ -9,7 +9,7 @@
       <header class="figcaption">
         <h2 class="page_title">
           <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-            <?php the_title(); ?> - <?php echo $color; ?>
+            <?php the_title(); ?>
           </a>
         </h2>
         <?php get_template_part( 'inc/meta' ); ?>
