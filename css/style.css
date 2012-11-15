@@ -884,10 +884,10 @@ figure {
   margin-bottom: 2.115em; }
   .col-1-4 header span {
     height: 20px !important; }
-  @media (min-width: 768px) {
+  @media (min-width: 600px) {
     .col-1-4 {
       width: 50%; } }
-  @media (min-width: 1100px) {
+  @media (min-width: 768px) {
     .col-1-4 {
       width: 25%; } }
 
@@ -1066,7 +1066,7 @@ header.figcaption {
     left: 0;
     right: 0;
     height: 140px; }
-    @media (min-width: 768px) {
+    @media (min-width: 600px) {
       .post header span {
         right: 21px; } }
     .single .post header span {

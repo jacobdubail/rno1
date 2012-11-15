@@ -157,10 +157,10 @@ figure {
   header span {
     height: 20px !important;
   }
-  @include breakpoint(meerkat) {
+  @include breakpoint(kitteh) {
     width: 50%;
   }
-  @include breakpoint(hippo) {
+  @include breakpoint(meerkat) {
     width: 25%;
   }
 }
@@ -400,7 +400,7 @@ header.figcaption {
       left: 0;
       right: 0;
       height: 140px;
-      @include breakpoint(meerkat) {
+      @include breakpoint(kitteh) {
         right: 21px;
       }
       
