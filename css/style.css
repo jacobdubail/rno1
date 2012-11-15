@@ -883,12 +883,12 @@ figure {
   width: 100%; }
   .col-1-4 header span {
     height: 20px !important; }
-  @media (min-width: 1100px) {
-    .col-1-4 {
-      width: 25%; } }
   @media (min-width: 768px) {
     .col-1-4 {
       width: 50%; } }
+  @media (min-width: 1100px) {
+    .col-1-4 {
+      width: 25%; } }
 
 .col-1-8 {
   width: 12.5%; }
