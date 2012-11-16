@@ -24,7 +24,11 @@
 
     </article>
     
-    <?php endwhile; endif; ?>
+    <?php endwhile; ?>
+
+      <?php get_template_part( 'inc/nav' ); ?>
+
+    <?php endif; ?>
 
 <?php //get_sidebar(); ?>
 
