@@ -558,7 +558,7 @@ table {
     -ms-text-overflow: ellipsis;
     text-overflow: ellipsis; }
     .navigation a:hover {
-      background: #bfbfbf; }
+      background: #e7e7e7; }
   .navigation .next-posts,
   .navigation .next-post {
     float: left;
