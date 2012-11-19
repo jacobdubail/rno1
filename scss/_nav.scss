@@ -169,7 +169,6 @@
     text-decoration: none;
     text-transform: uppercase;
     font-size: 11px;
-    max-width: 50%;
     overflow: hidden;
     white-space: nowrap;
 
@@ -185,10 +184,13 @@
   .next-posts,
   .next-post {
     float: left;
+    width: 45%;
   }
   .prev-posts,
   .prev-post {
     float: right;
+    width: 45%;
+    text-align: right;
   }
 
   .next-post,

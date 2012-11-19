@@ -552,7 +552,6 @@ table {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 11px;
-    max-width: 50%;
     overflow: hidden;
     white-space: nowrap;
     -o-text-overflow: ellipsis;
@@ -562,10 +561,13 @@ table {
       background: #bfbfbf; }
   .navigation .next-posts,
   .navigation .next-post {
-    float: left; }
+    float: left;
+    width: 45%; }
   .navigation .prev-posts,
   .navigation .prev-post {
-    float: right; }
+    float: right;
+    width: 45%;
+    text-align: right; }
   .navigation .next-post,
   .navigation .prev-post {
     position: relative; }
