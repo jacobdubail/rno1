@@ -1057,7 +1057,7 @@ figcaption {
     padding: 0; }
 
 header.figcaption {
-  background: rgba(255, 255, 255, 0.5);
+  background: #fff;
   margin: 0 0 0.705em; }
   header.figcaption .meta {
     font-weight: 300;
