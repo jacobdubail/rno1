@@ -1075,6 +1075,8 @@ header.figcaption {
     font-size: 13px; }
   .entry .figcaption {
     margin: 0 0 1em; }
+  .entry .listless li {
+    list-style: none; }
 
 .project_entry article {
   font-size: 12px;
