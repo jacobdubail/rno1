@@ -108,6 +108,7 @@ figure {
     font-weight: 300;
     margin: $baselineheight 0 $baselineheight/4 5px;
     text-transform: uppercase;
+    @include font-size(12);
   }
 }
 #recent-posts-3 h4,

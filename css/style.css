@@ -902,7 +902,8 @@ figure {
 .sidebar .widget_title {
   font-weight: 300;
   margin: 1.41em 0 0.3525em 5px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 12px; }
 
 #recent-posts-3 h4,
 #recent-posts-4 h4 {
