@@ -715,8 +715,7 @@ table {
       color: #00bdf2; }
       .footer .widget a:hover {
         color: #666666; }
-  .footer .widget_recent_entries li a,
-  .footer .tweets li a {
+  .footer .widget_recent_entries li a {
     color: #666666; }
   .footer .social {
     margin: 0;
