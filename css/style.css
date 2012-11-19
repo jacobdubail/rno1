@@ -539,10 +539,11 @@ table {
     cursor: default; }
 
 .navigation {
-  border-width: 1px 0;
-  border-style: solid;
-  border-color: #ddd;
-  clear: both; }
+  border-top: 1px solid #bfbfbf;
+  border-bottom: 1px solid #999999;
+  clear: both;
+  position: relative;
+  z-index: 100; }
   .ie7 .navigation {
     height: 22px; }
   .navigation a {
@@ -551,7 +552,7 @@ table {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 11px;
-    max-width: 270px;
+    max-width: 50%;
     overflow: hidden;
     white-space: nowrap;
     -o-text-overflow: ellipsis;
