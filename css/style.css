@@ -538,6 +538,51 @@ table {
     background: #fff;
     cursor: default; }
 
+.navigation {
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: #ddd;
+  clear: both; }
+  .ie7 .navigation {
+    height: 22px; }
+  .navigation a {
+    padding: 4px 20px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 11px;
+    max-width: 270px;
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis; }
+    .navigation a:hover {
+      background: #bfbfbf; }
+  .navigation .next-posts,
+  .navigation .next-post {
+    float: left; }
+  .navigation .prev-posts,
+  .navigation .prev-post {
+    float: right; }
+  .navigation .next-post,
+  .navigation .prev-post {
+    position: relative; }
+    .navigation .next-post:before,
+    .navigation .prev-post:before {
+      position: absolute;
+      color: #00bdf2;
+      top: 2px; }
+  .navigation .next-post:before {
+    content: '\00AB';
+    left: 10px; }
+  .navigation .prev-post:before {
+    content: '\00BB';
+    right: 10px; }
+  .navigation .next-post:hover:before,
+  .navigation .prev-post:hover:before {
+    color: #404040; }
+
 .carousel {
   position: relative;
   margin-bottom: 20px;
