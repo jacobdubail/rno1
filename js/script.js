@@ -58,6 +58,9 @@
 
   $("#vimeo").fitVids();
 
+  $('.carousel').carousel({
+    interval: 3000
+  });
 
 
 
