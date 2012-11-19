@@ -47,9 +47,9 @@
       
       <div class="col-1-3 project_entry">
         <header class="figcaption">
-            <h2><?php the_title(); ?></h2>
-            <p><?php echo $types; ?></p>
-          </header>
+          <h2><?php the_title(); ?></h2>
+          <p><?php echo $types; ?></p>
+        </header>
         <article>
           <?php the_content(); ?>
         </article>

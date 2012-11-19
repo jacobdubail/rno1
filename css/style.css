@@ -839,6 +839,7 @@ body {
   width: 100%;
   background-color: transparent;
   font-family: "museo-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
   font-size: 14px;
   line-height: 1.41em;
   color: #6d6d6d;
