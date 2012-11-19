@@ -106,7 +106,8 @@ figure {
 
   .widget_title {
     font-weight: 300;
-    margin: $baselineheight 0 0;
+    margin: $baselineheight 0 $baselineheight/4 5px;
+    text-transform: uppercase;
   }
 }
 #recent-posts-3 h4,
