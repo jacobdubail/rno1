@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
   <header class="figcaption">
-    <h1 class="page_title">rno1 // Brand Beat.</h1>
+    <h1 class="page_title">rno1 // brand beat.</h1>
     <p class="meta">Ideas + Insights // News + Noteworthy // Trends + Technology</p>
   </header> 
 
