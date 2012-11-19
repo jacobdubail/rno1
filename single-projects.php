@@ -20,7 +20,7 @@
     }
   ?>
 
-    <article <?php post_class() ?>>
+    <article <?php post_class($klasses) ?>>
       
       <?php
         if(get_field('slide')): 

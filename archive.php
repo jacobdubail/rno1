@@ -1,5 +1,10 @@
 <?php get_header(); ?>
 
+  <header class="figcaption">
+    <h1 class="page_title">rno1 // Brand Beat.</h1>
+    <p class="meta">Ideas + Insights // News + Noteworthy // Trends + Technology</p>
+  </header> 
+
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
       
     <article class="post col-1-3" id="post-<?php the_ID(); ?>">
