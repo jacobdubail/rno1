@@ -398,7 +398,7 @@ header.figcaption {
       }
     }
 
-    span {
+    > span {
       @include background(radial-gradient(#D6D2D2,#c3bfbf 63%));
       position: relative;
       display: block;

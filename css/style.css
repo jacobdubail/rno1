@@ -715,6 +715,7 @@ table {
       color: #00bdf2; }
       .footer .widget a:hover {
         color: #666666; }
+  .footer .tweets li a,
   .footer .widget_recent_entries li a {
     color: #666666; }
   .footer .social {
@@ -1068,7 +1069,7 @@ header.figcaption {
       @media (min-width: 768px) {
         .single .post header {
           margin-bottom: 220px; } }
-    .post header span {
+    .post header > span {
       background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 63, color-stop(0%, #d6d2d2), color-stop(63%, #c3bfbf));
       background: -webkit-radial-gradient(#d6d2d2, #c3bfbf 63%);
       background: -moz-radial-gradient(#d6d2d2, #c3bfbf 63%);
@@ -1079,57 +1080,57 @@ header.figcaption {
       top: -182px;
       left: 0;
       height: 140px; }
-      .single .post header span {
+      .single .post header > span {
         top: 20px;
         height: 140px; }
         @media (min-width: 768px) {
-          .single .post header span {
+          .single .post header > span {
             height: 190px; } }
-      .page .post header span {
+      .page .post header > span {
         top: -55px; }
-      .post header span.green {
+      .post header > span.green {
         background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 63, color-stop(0%, #e4f1e7), color-stop(63%, #d2e2d6));
         background: -webkit-radial-gradient(#e4f1e7, #d2e2d6 63%);
         background: -moz-radial-gradient(#e4f1e7, #d2e2d6 63%);
         background: -o-radial-gradient(#e4f1e7, #d2e2d6 63%);
         background: radial-gradient(#e4f1e7, #d2e2d6 63%); }
-      .post header span.grey {
+      .post header > span.grey {
         background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 63, color-stop(0%, #d6d2d2), color-stop(63%, #c3bfbf));
         background: -webkit-radial-gradient(#d6d2d2, #c3bfbf 63%);
         background: -moz-radial-gradient(#d6d2d2, #c3bfbf 63%);
         background: -o-radial-gradient(#d6d2d2, #c3bfbf 63%);
         background: radial-gradient(#d6d2d2, #c3bfbf 63%); }
-      .post header span.aqua {
+      .post header > span.aqua {
         background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 63, color-stop(0%, #e5ffff), color-stop(63%, #d3f1f1));
         background: -webkit-radial-gradient(#e5ffff, #d3f1f1 63%);
         background: -moz-radial-gradient(#e5ffff, #d3f1f1 63%);
         background: -o-radial-gradient(#e5ffff, #d3f1f1 63%);
         background: radial-gradient(#e5ffff, #d3f1f1 63%); }
-      .post header span.yellow {
+      .post header > span.yellow {
         background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 63, color-stop(0%, #ffffe5), color-stop(63%, #f1f1d3));
         background: -webkit-radial-gradient(#ffffe5, #f1f1d3 63%);
         background: -moz-radial-gradient(#ffffe5, #f1f1d3 63%);
         background: -o-radial-gradient(#ffffe5, #f1f1d3 63%);
         background: radial-gradient(#ffffe5, #f1f1d3 63%); }
-      .post header span.pink {
+      .post header > span.pink {
         background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 63, color-stop(0%, #ffedff), color-stop(63%, #f1dcf1));
         background: -webkit-radial-gradient(#ffedff, #f1dcf1 63%);
         background: -moz-radial-gradient(#ffedff, #f1dcf1 63%);
         background: -o-radial-gradient(#ffedff, #f1dcf1 63%);
         background: radial-gradient(#ffedff, #f1dcf1 63%); }
-      .post header span.orange {
+      .post header > span.orange {
         background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 63, color-stop(0%, #fde5e0), color-stop(63%, #efd4ce));
         background: -webkit-radial-gradient(#fde5e0, #efd4ce 63%);
         background: -moz-radial-gradient(#fde5e0, #efd4ce 63%);
         background: -o-radial-gradient(#fde5e0, #efd4ce 63%);
         background: radial-gradient(#fde5e0, #efd4ce 63%); }
-      .post header span.purple {
+      .post header > span.purple {
         background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 63, color-stop(0%, #e7ebf6), color-stop(63%, #d6dae7));
         background: -webkit-radial-gradient(#e7ebf6, #d6dae7 63%);
         background: -moz-radial-gradient(#e7ebf6, #d6dae7 63%);
         background: -o-radial-gradient(#e7ebf6, #d6dae7 63%);
         background: radial-gradient(#e7ebf6, #d6dae7 63%); }
-      .post header span.blue {
+      .post header > span.blue {
         background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 63, color-stop(0%, #e7f6fd), color-stop(63%, #d6e7ef));
         background: -webkit-radial-gradient(#e7f6fd, #d6e7ef 63%);
         background: -moz-radial-gradient(#e7f6fd, #d6e7ef 63%);
