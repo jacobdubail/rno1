@@ -686,10 +686,10 @@ table {
   .carousel-hover-control.left {
     left: 0; }
   .carousel-hover-control.right {
-    right: 3%; }
+    right: 2%; }
     @media (min-width: 768px) {
       .carousel-hover-control.right {
-        right: 2%; } }
+        right: 3%; } }
   .carousel-hover-control:hover {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
     opacity: 0.8; }

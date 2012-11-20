@@ -133,9 +133,9 @@ left:100%
     left: 0;
   }
   &.right {
-    right: 3%;
+    right: 2%;
     @include breakpoint(meerkat) {
-      right: 2%;
+      right: 3%;
     }
   }
   &:hover {
