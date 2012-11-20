@@ -6,7 +6,11 @@
       
     <article class="post col-2-3" id="post-<?php the_ID(); ?>">
 
-      <?php $color = get_field('color'); ?>
+      <?php if ( get_the_post_thumbnail() ) : ?>
+        <?php the_post_thumbnail('full'); ?>
+      <?php else : ?>
+        <?php $color = get_field('color'); ?>
+      <?php endif; ?>
 
       <header class="figcaption">
         <h2 class="page_title"><?php the_title(); ?></h2>
