@@ -23,7 +23,7 @@
 
       <div class="entry">
 
-        <?php the_content('Read More'); ?>
+        <?php the_excerpt(); ?>
 
       </div>
 
