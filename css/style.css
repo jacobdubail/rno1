@@ -831,7 +831,7 @@ a {
     color: #4d4d4d; }
 
 p {
-  margin: 0 0 1.41em; }
+  margin: 0 0 0.705em; }
 
 body {
   margin: 0;
@@ -1071,8 +1071,10 @@ header.figcaption {
   padding: 15px;
   margin: -15px; }
   .entry h2, .entry h3 {
-    margin: 1.41em 0 0.47em;
+    margin: 1.41em 0 0.705em;
     font-weight: 300; }
+  .entry > h2:first-child {
+    margin-top: 0.705em; }
   .entry p {
     margin: 0 0 1.41em;
     font-size: 13px; }

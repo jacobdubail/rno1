@@ -27,7 +27,7 @@ a {
   }
 }
 p {
-  margin: 0 0 $baselineheight;
+  margin: 0 0 $baselineheight/2;
 }
 
 body {
@@ -325,8 +325,12 @@ header.figcaption {
   margin: -15px;
 
   h2, h3 {
-    margin: $baselineheight 0 $baselineheight/3;
+    margin: $baselineheight 0 $baselineheight/2;
     font-weight: 300;
+  }
+  > h2:first-child {
+    margin-top: $baselineheight/2;
+  //  margin-bottom: $baselineheight/2;
   }
 
   p {
