@@ -142,7 +142,7 @@ left:100%
     @include opacity(.8);
   }
 
-  .carousel-inner:hover & {
+  .carousel:hover & {
     @include opacity(.4);
   }
 }
