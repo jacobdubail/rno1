@@ -1145,7 +1145,7 @@ header.figcaption {
         .single .post header {
           margin-bottom: 220px; } }
       .single .post header.has_thumbnail {
-        margin-bottom: 0.705em; }
+        margin-bottom: 1.41em; }
     .post header > span {
       background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 63, color-stop(0%, #d6d2d2), color-stop(63%, #c3bfbf));
       background: -webkit-radial-gradient(#d6d2d2, #c3bfbf 63%);
@@ -1214,7 +1214,7 @@ header.figcaption {
         background: -o-radial-gradient(#e7f6fd, #d6e7ef 63%);
         background: radial-gradient(#e7f6fd, #d6e7ef 63%); }
   .post .wp-post-image {
-    margin-bottom: 0.705em; }
+    margin-bottom: 1.41em; }
 
 .post.col-1-3 {
   margin-bottom: 30px;

@@ -433,7 +433,7 @@ header.figcaption {
         margin-bottom: 220px;
       }
       &.has_thumbnail {
-        margin-bottom: $baselineheight/2;
+        margin-bottom: $baselineheight;
       }
     }
 
@@ -485,7 +485,7 @@ header.figcaption {
   }
 
   .wp-post-image {
-    margin-bottom: $baselineheight/2;
+    margin-bottom: $baselineheight;
   }
 }
 
