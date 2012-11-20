@@ -39,6 +39,9 @@
             </div>
           <?php endwhile; ?>
           </div>
+          <a class="carousel-hover-control left" href="#project_carousel" data-slide="prev"></a>
+          <a class="carousel-hover-control right" href="#project_carousel" data-slide="next"></a>
+
           <a class="carousel-control left" href="#project_carousel" data-slide="prev">&lsaquo;</a>
           <a class="carousel-control right" href="#project_carousel" data-slide="next">&rsaquo;</a>
         </div>
