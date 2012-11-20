@@ -344,6 +344,16 @@ header.figcaption {
     list-style: none;
   }
 
+  ul li {
+    list-style: none;
+    position: relative;
+
+    &:before {
+      content: '//';
+      margin-right: 5px;
+    }
+  }
+
 }
 .project_entry {
 

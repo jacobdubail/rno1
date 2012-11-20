@@ -1082,6 +1082,12 @@ header.figcaption {
     margin: 0 0 1em; }
   .entry .listless li {
     list-style: none; }
+  .entry ul li {
+    list-style: none;
+    position: relative; }
+    .entry ul li:before {
+      content: '//';
+      margin-right: 5px; }
 
 .project_entry article {
   font-size: 12px;
