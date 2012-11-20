@@ -4,6 +4,7 @@
     <h1 class="page_title">rno1 // brand beat.</h1>
     <p>Ideas + Insights // News + Noteworthy // Trends + Technology</p>
   </header> 
+  <br />
 
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
       
