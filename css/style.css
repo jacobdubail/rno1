@@ -315,12 +315,12 @@ table {
   color: #000;
   padding: 0.2em 0; }
 
-.cf, .grid {
+.cf, .grid, .gfield {
   *zoom: 1; }
-  .cf:before, .grid:before, .cf:after, .grid:after {
+  .cf:before, .grid:before, .gfield:before, .cf:after, .grid:after, .gfield:after {
     content: " ";
     display: table; }
-  .cf:after, .grid:after {
+  .cf:after, .grid:after, .gfield:after {
     clear: both; }
 
 .ir {
@@ -1298,6 +1298,7 @@ input[type=button]:hover {
   margin-bottom: 15px; }
 
 .gfield {
+  clear: both;
   margin-bottom: 23px;
   list-style: none;
   text-indent: 0 !important;

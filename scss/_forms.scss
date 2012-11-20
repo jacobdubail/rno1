@@ -47,6 +47,8 @@ input[type=button]:hover { color: #fbfbfb; background: #00BDF2; }
 }
 
 .gfield {
+  @extend .cf;
+  clear: both;
   margin-bottom: 23px;
   list-style: none;
   text-indent: 0 !important;
