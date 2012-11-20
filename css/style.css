@@ -1043,7 +1043,7 @@ div .figcaption,
 figcaption {
   border-top: 1px solid #bfbfbf;
   border-bottom: 1px solid #999999;
-  padding: .5em 0;
+  padding: .5em 0 .5em .5em;
   background: #fff; }
   div .figcaption h2, div .figcaption p, div .figcaption a,
   figcaption h2,
