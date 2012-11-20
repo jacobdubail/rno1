@@ -313,6 +313,10 @@ header.figcaption {
   .meta {
     font-weight: 300;
     line-height: 1;
+    font-size: 11px;
+    a {
+      font-size: 11px;
+    }
   }
 }
 
@@ -381,7 +385,7 @@ header.figcaption {
   overflow: hidden;
 
   .post & {
-    font-weight: 400;
+    font-weight: 700;
     line-height: 1.2;
     margin-bottom: $baselineheight/4;
   }
