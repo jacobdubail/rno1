@@ -141,6 +141,10 @@ left:100%
   &:hover {
     @include opacity(.8);
   }
+
+  .carousel-inner:hover & {
+    @include opacity(.4);
+  }
 }
 
 

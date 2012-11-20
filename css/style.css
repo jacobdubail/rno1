@@ -693,6 +693,9 @@ table {
   .carousel-hover-control:hover {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
     opacity: 0.8; }
+  .carousel-inner:hover .carousel-hover-control {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+    opacity: 0.4; }
 
 .carousel-caption {
   position: absolute;
