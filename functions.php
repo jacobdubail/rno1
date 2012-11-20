@@ -406,3 +406,18 @@ function swift_list_cats( $num = 4 ) {
   } // end for
   echo $cat_string;
 }
+
+
+// custom excerpt length
+function custom_excerpt_length($length) {
+  return 260;
+}
+add_filter('excerpt_length', 'custom_excerpt_length');
+
+  
+  
+  // custom excerpt ellipses for 2.9+
+function custom_excerpt_more($more) {
+    return '...';
+}
+add_filter('excerpt_more', 'custom_excerpt_more');
