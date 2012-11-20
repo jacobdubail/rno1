@@ -1053,7 +1053,7 @@ figure {
     max-width: 100%; }
   .figure_block .overlay {
     position: absolute;
-    top: -1px;
+    top: 0;
     left: 0;
     right: 0;
     display: block;
@@ -1062,6 +1062,8 @@ figure {
     -moz-transition: opacity 0.5s ease;
     -o-transition: opacity 0.5s ease;
     transition: opacity 0.5s ease; }
+    .chrome .figure_block .overlay {
+      top: -1px; }
   .figure_block:hover {
     text-decoration: none; }
     .figure_block:hover h2, .figure_block:hover p {

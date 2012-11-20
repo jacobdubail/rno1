@@ -276,13 +276,15 @@ figure {
 
   .overlay {
     position: absolute;
-    top: -1px;
+    top: 0;
     left: 0;
     right: 0;
     display: block;
     opacity: 0;
     @include transition(opacity .5s ease);
-
+    .chrome & {
+      top: -1px;
+    }
   }
 
   &:hover {
