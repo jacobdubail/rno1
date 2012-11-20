@@ -410,7 +410,7 @@ function swift_list_cats( $num = 4 ) {
 
 // custom excerpt length
 function custom_excerpt_length($length) {
-  return 260;
+  return 60;
 }
 add_filter('excerpt_length', 'custom_excerpt_length');
 
