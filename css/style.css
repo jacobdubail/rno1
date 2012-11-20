@@ -1302,6 +1302,8 @@ input[type=button]:hover {
 .gfield {
   margin-bottom: 23px;
   list-style: none; }
+  .gfield:before {
+    display: none; }
 
 .ginput_price {
   display: none; }

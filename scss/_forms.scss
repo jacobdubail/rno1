@@ -51,6 +51,9 @@ input[type=button]:hover { color: #fbfbfb; background: #00BDF2; }
 .gfield {
   margin-bottom: 23px;
   list-style: none;
+  &:before {
+    display: none;
+  }
 }
 
 .ginput_price {
