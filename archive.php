@@ -23,7 +23,7 @@
 
       <div class="entry">
 
-        <?php echo substr(get_the_excerpt(), 0, 250); ?>
+        <?php echo substr(get_the_excerpt(), 0, 220); ?>
 
       </div>
 
