@@ -1213,6 +1213,8 @@ header.figcaption {
         background: -moz-radial-gradient(#e7f6fd, #d6e7ef 63%);
         background: -o-radial-gradient(#e7f6fd, #d6e7ef 63%);
         background: radial-gradient(#e7f6fd, #d6e7ef 63%); }
+  .post .wp-post-image {
+    margin-bottom: 0.705em; }
 
 .post.col-1-3 {
   margin-bottom: 30px;
