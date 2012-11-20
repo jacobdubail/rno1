@@ -1064,9 +1064,11 @@ header.figcaption {
   header.figcaption .meta {
     font-weight: 300;
     line-height: 1;
-    font-size: 11px; }
+    font-size: 11px;
+    color: #bfbfbf; }
     header.figcaption .meta a {
-      font-size: 11px; }
+      font-size: 11px;
+      color: #bfbfbf; }
 
 /* ENTRIES */
 .entry {
