@@ -686,7 +686,10 @@ table {
   .carousel-hover-control.left {
     left: 0; }
   .carousel-hover-control.right {
-    right: 0; }
+    right: 3%; }
+    @media (min-width: 768px) {
+      .carousel-hover-control.right {
+        right: 2%; } }
   .carousel-hover-control:hover {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
     opacity: 0.8; }
@@ -955,7 +958,7 @@ figure {
   @media (min-width: 768px) {
     .col-1-3 {
       width: 50%; }
-      .col-1-3.sidebar {
+      .col-1-3.project_entry, .col-1-3.sidebar {
         width: 33.33%; } }
   @media (min-width: 992px) {
     .col-1-3 {

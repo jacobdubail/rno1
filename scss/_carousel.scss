@@ -133,7 +133,10 @@ left:100%
     left: 0;
   }
   &.right {
-    right: 0;
+    right: 3%;
+    @include breakpoint(meerkat) {
+      right: 2%;
+    }
   }
   &:hover {
     @include opacity(.8);
