@@ -1300,8 +1300,8 @@ input[type=button]:hover {
 .gfield {
   margin-bottom: 23px;
   list-style: none;
-  text-indent: 0;
-  padding-left: 0; }
+  text-indent: 0 !important;
+  padding-left: 0 !important; }
   .gfield:before {
     display: none; }
 

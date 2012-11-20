@@ -49,8 +49,8 @@ input[type=button]:hover { color: #fbfbfb; background: #00BDF2; }
 .gfield {
   margin-bottom: 23px;
   list-style: none;
-  text-indent: 0;
-  padding-left: 0;
+  text-indent: 0 !important;
+  padding-left: 0 !important;
   &:before {
     display: none;
   }
