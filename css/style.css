@@ -1057,6 +1057,9 @@ figcaption {
     text-transform: uppercase;
     background: transparent !important;
     padding: 0; }
+  div .figcaption h2,
+  figcaption h2 {
+    font-weight: 700; }
 
 header.figcaption {
   background: #fff;
