@@ -999,7 +999,7 @@ figure {
     background: -o-radial-gradient(#ffffff, #f1f1f1);
     background: radial-gradient(#ffffff, #f1f1f1);
     padding: 13px;
-    color: #00bdf2;
+    color: #000;
     font-size: 15px; }
   .figure_block.intro div a:hover {
     color: #0095bf;
