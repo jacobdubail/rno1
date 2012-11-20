@@ -23,7 +23,7 @@
 
       <div class="entry">
 
-        <?php echo substr(get_the_excerpt(), 0, 220); ?>
+        <?php echo rno1_get_excerpt($post->ID); ?>
 
       </div>
 
