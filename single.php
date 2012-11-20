@@ -3,10 +3,12 @@
 <?php get_sidebar(); ?>
 
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+    <?php $thumbs = ( get_the_post_thumbnail() ) ? 'has_thumbnail' : 'no_thumbnail'; ?>
       
     <article class="post col-2-3" id="post-<?php the_ID(); ?>">
 
-      <header class="figcaption">
+      <header class="figcaption <?php echo $thumbs; ?>">
         <h2 class="page_title"><?php the_title(); ?></h2>
         <?php get_template_part( 'inc/meta' ); ?>
         

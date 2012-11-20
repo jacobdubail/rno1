@@ -432,6 +432,9 @@ header.figcaption {
       @include breakpoint(meerkat) {
         margin-bottom: 220px;
       }
+      &.has_thumbnail {
+        margin-bottom: $baselineheight/2;
+      }
     }
 
     > span {
