@@ -1358,6 +1358,9 @@ input[type=button]:hover {
 .gfield_checkbox li,
 .gfield_radio li {
   list-style: none; }
+  .gfield_checkbox li:before,
+  .gfield_radio li:before {
+    display: none; }
 
 .gfield_checkbox li {
   margin-bottom: 9px; }

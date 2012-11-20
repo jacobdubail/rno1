@@ -119,6 +119,10 @@ input[type=button]:hover { color: #fbfbfb; background: #00BDF2; }
 .gfield_checkbox li,
 .gfield_radio li {
   list-style: none;
+
+  &:before {
+    display: none;
+  }
 }
 
 .gfield_checkbox li {
