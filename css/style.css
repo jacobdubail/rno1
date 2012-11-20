@@ -934,7 +934,9 @@ figure {
   width: 100%; }
   @media (min-width: 768px) {
     .col-1-3 {
-      width: 50%; } }
+      width: 50%; }
+      .col-1-3.sidebar {
+        width: 33.33%; } }
   @media (min-width: 992px) {
     .col-1-3 {
       width: 33.33%; } }

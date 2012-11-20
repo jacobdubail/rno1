@@ -150,6 +150,9 @@ figure {
   width: 100%;
   @include breakpoint(meerkat) {
     width: 50%;
+    &.sidebar {
+      width: 33.33%;
+    }
   }
   @include breakpoint(zebra) {
     width: 33.33%;
