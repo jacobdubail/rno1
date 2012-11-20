@@ -223,11 +223,6 @@ figure {
 
   &.intro div {
 
-    p {
-      color: $blue;
-      @include font-size(15);
-    }
-
     &:hover {
 
       p {
@@ -242,7 +237,9 @@ figure {
     p {
       @include background(radial-gradient(#fff,#f1f1f1));
       padding: 13px;    
-      color: #000;
+      //color: #000;
+      color: $blue;
+      @include font-size(15);
     }
     a:hover {
       color: darken($blue, 10%);

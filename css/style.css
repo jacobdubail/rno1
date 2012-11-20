@@ -988,9 +988,6 @@ figure {
       width: 23.5%; }
       .figure_block.project-double {
         width: 47%; } }
-  .figure_block.intro div p {
-    color: #00bdf2;
-    font-size: 15px; }
   .figure_block.intro div:hover p {
     color: #000; }
   .figure_block.intro div:hover .figcaption p {
@@ -1002,7 +999,8 @@ figure {
     background: -o-radial-gradient(#ffffff, #f1f1f1);
     background: radial-gradient(#ffffff, #f1f1f1);
     padding: 13px;
-    color: #000; }
+    color: #00bdf2;
+    font-size: 15px; }
   .figure_block.intro div a:hover {
     color: #0095bf;
     text-decoration: none; }
