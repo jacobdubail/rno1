@@ -1086,12 +1086,12 @@ header.figcaption {
     padding-left: 2%; }
     .entry ul li {
       list-style: none;
-      position: relative; }
+      position: relative;
+      padding-left: 16px;
+      text-indent: -16px; }
       .entry ul li:before {
         content: '//';
-        margin-right: 5px;
-        padding-left: 16px;
-        text-indent: -16px; }
+        margin-right: 5px; }
 
 .project_entry article {
   font-size: 12px;
