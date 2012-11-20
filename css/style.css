@@ -1505,9 +1505,10 @@ input[type=submit] {
 .gform_wrapper .gf_page_steps {
   overflow: hidden;
   width: 92%;
-  margin: 0 0 8px 0;
-  padding: 0 0 4px 0;
-  border-bottom: 1px dotted #ccc; }
+  margin: 0 0 1.41em 0;
+  padding: .5em 0;
+  border-top: 1px solid #bfbfbf;
+  border-bottom: 1px solid #999999; }
 
 .gform_wrapper .gf_step {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
