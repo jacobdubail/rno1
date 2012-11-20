@@ -424,6 +424,7 @@ header.figcaption {
 
   header {
     height: 50px;
+    padding-left: 0;
 
     .single & {
       height: 70px;
@@ -439,7 +440,6 @@ header.figcaption {
       display: block;
       top: -182px;
       left: 0;
-      margin-left: -.5em;
       height: 140px;
       
       .single & {

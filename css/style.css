@@ -1136,7 +1136,8 @@ header.figcaption {
     padding-top: 0;
     margin-bottom: 1.41em; }
   .post header {
-    height: 50px; }
+    height: 50px;
+    padding-left: 0; }
     .single .post header {
       height: 70px;
       margin-bottom: 170px; }
@@ -1153,7 +1154,6 @@ header.figcaption {
       display: block;
       top: -182px;
       left: 0;
-      margin-left: -0.5em;
       height: 140px; }
       .single .post header > span {
         top: 20px;
