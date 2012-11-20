@@ -609,7 +609,7 @@ table {
   -o-transition: .6s ease-in-out left;
   transition: 0.6s ease-in-out left; }
 
-.carousel .item > img {
+.carousel .item img {
   display: block;
   line-height: 1;
   width: 100%; }
