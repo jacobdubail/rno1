@@ -11,18 +11,18 @@
         <?php get_template_part( 'inc/meta' ); ?>
         
         <?php if ( get_the_post_thumbnail() ) : ?>
+          </header>
           <?php the_post_thumbnail('full'); ?>
         <?php else : ?>
           <?php $color = get_field('color'); ?>
           <span class="<?php echo $color; ?>"></span>
-          
+          </header>
         <?php endif; ?>
         
       
-
       <div class="entry">
 
-        <?php the_content('Read More'); ?>
+        <?php the_content(); ?>
 
       </div>
 
