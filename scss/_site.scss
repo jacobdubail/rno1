@@ -237,8 +237,7 @@ figure {
     p {
       @include background(radial-gradient(#fff,#f1f1f1));
       padding: 13px;    
-      color: #000;
-      //color: $blue;
+      color: $darkergrey;
       @include font-size(15);
     }
     a:hover {
@@ -297,6 +296,7 @@ figcaption {
   border-top: 1px solid lighten(black, 75%);
   border-bottom: 1px solid lighten(black, 60%);
   padding: .5em 0;
+  background: #fff;
    
    h2, p, a {
     @include font-size(12);
