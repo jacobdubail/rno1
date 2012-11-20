@@ -379,7 +379,7 @@ header.figcaption {
 .page_title {  
   @include font-size(27);
   color: $blue;
-  font-weight: 700;
+  font-weight: 300;
   line-height: 32px;
   margin: 0;
   white-space: nowrap;
@@ -387,6 +387,7 @@ header.figcaption {
   overflow: hidden;
 
   .post & {
+    font-weight: 700;
     line-height: 1.2;
     margin-bottom: $baselineheight/4;
   }

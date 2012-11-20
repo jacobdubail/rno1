@@ -1106,13 +1106,14 @@ header.figcaption {
 .page_title {
   font-size: 27px;
   color: #00bdf2;
-  font-weight: 700;
+  font-weight: 300;
   line-height: 32px;
   margin: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden; }
   .post .page_title {
+    font-weight: 700;
     line-height: 1.2;
     margin-bottom: 0.3525em; }
   .single .post .page_title {
