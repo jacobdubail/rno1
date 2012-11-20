@@ -36,8 +36,6 @@ input[type=button]:hover { color: #fbfbfb; background: #00BDF2; }
   display: block;
   font-size: 15px;
   margin: 7px 0 17px;
-  font-family: "etica-1","etica-2",sans-serif;
-  font-weight: 200;
   color: #444;
   width: 85%;
 }
@@ -51,6 +49,8 @@ input[type=button]:hover { color: #fbfbfb; background: #00BDF2; }
 .gfield {
   margin-bottom: 23px;
   list-style: none;
+  text-indent: 0;
+  padding-left: 0;
   &:before {
     display: none;
   }
@@ -70,8 +70,6 @@ input[type=button]:hover { color: #fbfbfb; background: #00BDF2; }
   margin-bottom: 10px;
   color: #999;
   top: 0;
-  font-family: "etica-1","etica-2",sans-serif;
-  font-weight: 200;
 }
 
 .ginput_container label {
