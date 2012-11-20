@@ -25,7 +25,7 @@
 
         <?php echo rno1_get_excerpt($post->ID); ?>
 
-        <p><a class="read-more" title="<?php the_title(); ?>"><?php the_permalink(); ?></a></p>
+        <p><a class="read-more" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">Read more</a></p>
 
       </div>
 
