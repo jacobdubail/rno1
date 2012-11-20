@@ -44,7 +44,8 @@ transition:.6s ease-in-out left
 
 .carousel .item>img {
 display:block;
-line-height:1
+line-height:1;
+width: 100%;
 }
 
 .carousel .active,.carousel .next,.carousel .prev {
