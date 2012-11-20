@@ -9,7 +9,14 @@
       <header class="figcaption">
         <h2 class="page_title"><?php the_title(); ?></h2>
         <?php get_template_part( 'inc/meta' ); ?>
-        <span class="<?php echo $color; ?>"></span>
+        
+        <?php if ( get_the_post_thumbnail() ) : ?>
+          <?php the_post_thumbnail('full'); ?>
+        <?php else : ?>
+          <?php $color = get_field('color'); ?>
+          <span class="<?php echo $color; ?>"></span>
+        <?php endif; ?>
+        
       </header>
 
       <div class="entry">
