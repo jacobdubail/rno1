@@ -438,7 +438,8 @@ header.figcaption {
       position: relative;
       display: block;
       top: -182px;
-      left: -.5em;
+      left: 0;
+      margin-left: -.5em;
       height: 140px;
       
       .single & {
