@@ -988,8 +988,11 @@ figure {
       width: 23.5%; }
       .figure_block.project-double {
         width: 47%; } }
+  .figure_block.intro div p {
+    color: #00bdf2;
+    font-size: 15px; }
   .figure_block.intro div:hover p {
-    color: #4d4d4d; }
+    color: #000; }
   .figure_block.intro div:hover .figcaption p {
     color: #00bdf2 !important; }
   .figure_block.intro div p {

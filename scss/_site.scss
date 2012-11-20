@@ -223,10 +223,15 @@ figure {
 
   &.intro div {
 
+    p {
+      color: $blue;
+      @include font-size(15);
+    }
+
     &:hover {
 
       p {
-        color: $darkergrey;
+        color: #000;
       }
 
       .figcaption p {
