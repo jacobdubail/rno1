@@ -120,6 +120,26 @@ left:100%
   }
 }
 
+.carousel-hover-control {
+  @include opacity(0);
+  @include transition(opacity .2s ease);
+  position: absolute;
+  bottom: 52px;
+  top: 0;
+  width: 4em;
+  background: black;
+
+  &.left {
+    left: 0;
+  }
+  &.right {
+    right: 0;
+  }
+  &:hover {
+    @include opacity(.8);
+  }
+}
+
 
 .carousel-caption {
 position:absolute;

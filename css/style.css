@@ -671,6 +671,26 @@ table {
     .carousel-control.right:hover {
       background-position: -26px -17px; }
 
+.carousel-hover-control {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease;
+  -moz-transition: opacity 0.2s ease;
+  -o-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+  position: absolute;
+  bottom: 52px;
+  top: 0;
+  width: 4em;
+  background: black; }
+  .carousel-hover-control.left {
+    left: 0; }
+  .carousel-hover-control.right {
+    right: 0; }
+  .carousel-hover-control:hover {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.8; }
+
 .carousel-caption {
   position: absolute;
   left: 0;
