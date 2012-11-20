@@ -344,13 +344,18 @@ header.figcaption {
     list-style: none;
   }
 
-  ul li {
-    list-style: none;
-    position: relative;
+  ul {
+    padding-left: $columnpad;
+    li {
+      list-style: none;
+      position: relative;
 
-    &:before {
-      content: '//';
-      margin-right: 5px;
+      &:before {
+        content: '//';
+        margin-right: 5px;
+        padding-left: 16px;
+        text-indent: -16px;
+      }
     }
   }
 
