@@ -15,9 +15,10 @@
         <?php else : ?>
           <?php $color = get_field('color'); ?>
           <span class="<?php echo $color; ?>"></span>
+          
         <?php endif; ?>
         
-      </header>
+      
 
       <div class="entry">
 
