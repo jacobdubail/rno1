@@ -27,7 +27,7 @@ a {
   }
 }
 p {
-  margin: 0 0 $baselineheight/2;
+  margin: 0 0 $baselineheight;
 }
 
 body {
@@ -334,7 +334,7 @@ header.figcaption {
   }
 
   p {
-    margin: 0 0 $baselineheight;
+    margin: 0 0 $baselineheight/2;
     @include font-size(13);
   }
   .figcaption {
