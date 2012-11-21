@@ -52,6 +52,10 @@
         <li><a href="#" data-filter=".branding">Branding</a></li>
         <li><a href="#" data-filter=".website">Websites</a></li>
       </ul>
+    <?php else : ?>
+      <ul class="menu filters cf" id="filters">
+        <li><a href="/">Our Work</a></li>
+      </ul>
     <?php endif; ?>
   </nav>
   
