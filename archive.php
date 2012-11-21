@@ -12,7 +12,9 @@
 
       <?php 
         if ( get_the_post_thumbnail() ) :
+          echo "<div class='thumbnail'>";
           the_post_thumbnail( array( 670,400 ) );
+          echo "</div>";
           $color = NULL;
         else :
           $color = get_field('color'); 
