@@ -10,7 +10,14 @@
       
     <article class="post col-1-3" id="post-<?php the_ID(); ?>">
 
-      <?php $color = get_field('color'); ?>
+      <?php 
+        if ( get_the_post_thumbnail() ) :
+          the_post_thumbnail('medium');
+          $color = NULL;
+        else :
+          $color = get_field('color'); 
+        endif;
+      ?>
 
       <header class="figcaption">
         <h2 class="page_title">
@@ -19,7 +26,9 @@
           </a>
         </h2>
         <?php get_template_part( 'inc/meta' ); ?>
-        <span class="<?php echo $color; ?>"></span>
+        <?php if ( !empty($color) ) : ?>
+          <span class="<?php echo $color; ?>"></span>
+        <?php endif; ?>
       </header>
 
       <div class="entry">
