@@ -12,7 +12,7 @@
 
       <?php 
         if ( get_the_post_thumbnail() ) :
-          the_post_thumbnail('medium');
+          the_post_thumbnail( array( 670,140 ) );
           $color = NULL;
         else :
           $color = get_field('color'); 
