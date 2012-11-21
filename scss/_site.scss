@@ -536,7 +536,7 @@ header.figcaption {
       width: 130%;
       height: auto;
       max-width: 700px;
-      @include breakpoint(gnat) {
+      @include breakpoint(snail) {
         width: 100%;
       }
       @include breakpoint(meerkat) {
