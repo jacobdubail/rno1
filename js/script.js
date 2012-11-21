@@ -60,6 +60,10 @@
 
   $('.carousel').carousel({
     interval: 4000
+  })
+  .find('.item')
+  .on('click', 'img', function() {
+    $('.carousel').carousel('next');
   });
 
 
