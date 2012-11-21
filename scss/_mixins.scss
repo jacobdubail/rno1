@@ -17,6 +17,9 @@
   @else if $point == snail {
     @media (min-width: 480px)  { @content; }
   }
+  @else if $point == gnat {
+    @media (min-width: 360px) { @content; }
+  }
 }
 
 @mixin font-size($font-size: 16){
