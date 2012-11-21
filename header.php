@@ -53,8 +53,8 @@
         <li><a href="#" data-filter=".website">Websites</a></li>
       </ul>
     <?php else : ?>
-      <ul class="menu filters cf" id="filters">
-        <li><a href="/">Our Work</a></li>
+      <ul class="menu filters cf">
+        <li><a href="/">Back to Projects</a></li>
       </ul>
     <?php endif; ?>
   </nav>
