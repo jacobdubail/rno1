@@ -520,7 +520,7 @@ header.figcaption {
     position: absolute;
     top: 0;
     left: 0;
-    outline: 1px solid #3D00FF;
+//    outline: 1px solid #3D00FF;
     right: 2%;
     height: 140px;
     overflow: hidden;
@@ -531,11 +531,20 @@ header.figcaption {
       right: 6%;
     }
     img {
-      outline: 1px solid red;
+//      outline: 1px solid red;
       margin-bottom: 0;
-      width: 150%;
+      width: 100%;
       height: auto;
       max-width: 700px;
+      @include breakpoint(meerkat) {
+        width: 140%;
+      }
+      @include breakpoint(zebra) {
+        width: 170%;
+      }
+      @include breakpoint(elephant) {
+        width: 120%;
+      }
     }
   }
 }
