@@ -1311,7 +1311,7 @@ header.figcaption {
 
 .client_logos img {
   width: 100%;
-  margin: 0; }
+  margin: 0 0 2%; }
   @media (min-width: 992px) {
     .client_logos img {
       margin: 0 .5% .5% 0;

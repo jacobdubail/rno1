@@ -578,7 +578,7 @@ header.figcaption {
 
 .client_logos img {
   width: 100%;
-  margin: 0;
+  margin: 0 0 2%;
   @include breakpoint(zebra) {
     margin: 0 .5% .5% 0;
     width: 32.8%;
