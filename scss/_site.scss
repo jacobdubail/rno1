@@ -39,7 +39,7 @@ body {
   font-weight: 300;
   @include font-size(14);
   line-height : $baselineheight;
-  color : $textcolor; 
+  color : $textcolor;
   @include background-size(contain);
   background:url(../images/bg_mobile.jpg) fixed no-repeat center 0 #fff;
 
@@ -64,7 +64,7 @@ body {
   }
 }
 
-#logo { 
+#logo {
   background: url(../images/logo.png) no-repeat 0 0 transparent;
   width: 177px;
   height: 60px;
@@ -73,7 +73,7 @@ body {
   text-indent: 200px;
   overflow: hidden;
   white-space: nowrap;
-  padding: 0; 
+  padding: 0;
   top: 0;
   left: 10px;
 }
@@ -89,16 +89,16 @@ figure {
   margin-bottom : $baselineheight;
 
   img {
-    margin-bottom : $baselineheight / 4; 
+    margin-bottom : $baselineheight / 4;
   }
 }
 
 .sidebar {
 
-  > * {  
+  > * {
 
     @include breakpoint(meerkat) {
-      margin-right: 10%;  
+      margin-right: 10%;
     }
   }
   .widget {
@@ -150,7 +150,7 @@ figure {
   width: 100%;
   @include breakpoint(meerkat) {
     width: 50%;
-    
+
     &.project_entry,
     &.sidebar {
       width: 33.33%;
@@ -242,7 +242,7 @@ figure {
 
     p {
       @include background(radial-gradient(#fff,#f1f1f1));
-      padding: 13px;    
+      padding: 13px;
       color: $darkergrey;
       @include font-size(15);
     }
@@ -250,7 +250,7 @@ figure {
       color: darken($blue, 10%);
       text-decoration: none;
     }
-    
+
   }
 
   .case_study:before {
@@ -267,7 +267,7 @@ figure {
     z-index: 500;
     border-radius: 0 0 3px 3px;
   }
- 
+
   img {
     width: 100%;
     min-width: 100%;
@@ -305,7 +305,7 @@ figcaption {
   border-bottom: 1px solid lighten(black, 60%);
   padding: .5em 0 .5em .5em;
   background: #fff;
-   
+
    h2, p, a {
     @include font-size(12);
     @include transition(all .25s ease);
@@ -381,15 +381,15 @@ header.figcaption {
 
   article {
     @include font-size(12);
-    background: rgba(white, 0.5);  
+    background: rgba(white, 0.5);
     padding: $baselineheight/2 0;
   }
-  
+
 }
 
 
 /* PAGES */
-.page_title {  
+.page_title {
   @include font-size(27);
   color: $blue;
   font-weight: 700;
@@ -451,7 +451,7 @@ header.figcaption {
       top: -182px;
       left: 0;
       height: 140px;
-      
+
       .single & {
         top: 20px;
         height: 140px;
@@ -468,25 +468,25 @@ header.figcaption {
         @include background(radial-gradient(#E4F1E7,#d2e2d6 63%));
       }
       &.grey {
-        @include background(radial-gradient(#D6D2D2,#c3bfbf 63%)); 
+        @include background(radial-gradient(#D6D2D2,#c3bfbf 63%));
       }
       &.aqua {
-        @include background(radial-gradient(#e5ffff,#d3f1f1 63%)); 
+        @include background(radial-gradient(#e5ffff,#d3f1f1 63%));
       }
       &.yellow {
-        @include background(radial-gradient(#ffffe5,#F1F1D3 63%)); 
+        @include background(radial-gradient(#ffffe5,#F1F1D3 63%));
       }
       &.pink {
-        @include background(radial-gradient(#ffedff,#F1DCF1 63%)); 
+        @include background(radial-gradient(#ffedff,#F1DCF1 63%));
       }
       &.orange {
-        @include background(radial-gradient(#FDE5E0,#EFD4CE 63%)); 
+        @include background(radial-gradient(#FDE5E0,#EFD4CE 63%));
       }
       &.purple {
-        @include background(radial-gradient(#E7EBF6,#D6DAE7 63%)); 
+        @include background(radial-gradient(#E7EBF6,#D6DAE7 63%));
       }
       &.blue {
-        @include background(radial-gradient(#E7F6FD,#D6E7EF 63%)); 
+        @include background(radial-gradient(#E7F6FD,#D6E7EF 63%));
       }
     }
   }
@@ -576,6 +576,9 @@ header.figcaption {
   }
 }
 
+.client_logos img {
+  @extend .col-1-3;
+}
 
 
 
