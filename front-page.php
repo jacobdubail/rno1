@@ -1,13 +1,13 @@
 <?php get_header(); ?>
-  
-  
+
+
 
   <secion id="blocks">
 
     <div id="vimeo" class="project figure_block project-double">
       <iframe src="http://player.vimeo.com/video/49452532?title=0&amp;byline=0&amp;portrait=0&amp;color=00BDF2" width="1024" height="576" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
     </div>
- 
+
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <a class="project figure_block intro" href="<?php the_field('link'); ?>" title="<?php the_field('link_text'); ?>">
       <div>
@@ -20,21 +20,27 @@
   <?php endwhile; endif; wp_reset_query(); ?>
 
 
-  <?php 
+  <?php
     $args = array(
       'post_type'      => 'projects',
       'posts_per_page' => -1,
       'post_status'    => 'publish',
       'orderby'        => 'rand'
     );
-    
+
     $projects = new WP_Query( $args );
     while( $projects->have_posts() ) : $projects->the_post();
   ?>
 
-  <?php 
+  <?php
     $thumb   = get_field('thumbnail');
     $overlay = get_field('overlay');
+
+    $date    = get_the_date();
+
+    if ( strtotime( $date ) > strtotime("+1 months") ) {
+        echo "HI";
+    }
 
     $terms   = get_the_terms( $post->ID, 'type');
     $count   = count( $terms );
@@ -43,7 +49,7 @@
     $klasses = '';
     $cs      = false;
     if ( $terms ) :
-      foreach( $terms as $cat ) { 
+      foreach( $terms as $cat ) {
         $i++;
         $klasses   .= $cat->slug . ' ';
         if ( $cat->slug !== 'case-study' ) {
@@ -54,7 +60,7 @@
         } else {
           $cs = true;
         }
-      } 
+      }
     endif; // if terms
   ?>
       <a class="project figure_block <?php echo $klasses; ?>" href="<?php the_permalink(); ?>">
