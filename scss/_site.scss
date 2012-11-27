@@ -587,6 +587,9 @@ header.figcaption {
     margin: 0 .5% .5% 0;
     width: 32.8%;
   }
+  @include breakpoint(elephant) {
+    width: 24.5%;
+  }
 }
 
 

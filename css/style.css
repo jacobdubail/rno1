@@ -1320,6 +1320,9 @@ header.figcaption {
     .client_logos img {
       margin: 0 .5% .5% 0;
       width: 32.8%; } }
+  @media (min-width: 1382px) {
+    .client_logos img {
+      width: 24.5%; } }
 
 input[type=text],
 input[type=password],
