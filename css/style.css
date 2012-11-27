@@ -1311,12 +1311,12 @@ header.figcaption {
 
 .client_logos img {
   width: 100%;
-  margin: 0 0 2%; }
+  margin: 0 0 1%; }
   @media (min-width: 992px) {
     .client_logos img {
       margin: 0 .5% .5% 0;
       width: 32.8%; } }
-  @media (min-width: 480px) {
+  @media (min-width: 360px) {
     .client_logos img {
       width: 49%;
       margin: 0 1% 1% 0; } }

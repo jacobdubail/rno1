@@ -578,12 +578,12 @@ header.figcaption {
 
 .client_logos img {
   width: 100%;
-  margin: 0 0 2%;
+  margin: 0 0 1%;
   @include breakpoint(zebra) {
     margin: 0 .5% .5% 0;
     width: 32.8%;
   }
-  @include breakpoint(snail) {
+  @include breakpoint(gnat) {
     width: 49%;
     margin: 0 1% 1% 0;
   }
