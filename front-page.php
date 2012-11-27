@@ -72,8 +72,8 @@
             <p>
               <?php
               echo $date;
-              echo strtotime($date);
-              echo strtotime("+1 months");
+              echo ', ' . strtotime($date);
+              echo ', ' . strtotime("+1 months");
               ?>
             </p>
             <img class="overlay" src="<?php echo $thumb['url']; ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" />
