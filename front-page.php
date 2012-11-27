@@ -38,10 +38,6 @@
 
     $date    = get_the_date();
 
-    echo $date;
-    echo strtotime($date);
-    echo strtotime("+1 months");
-
     // if ( strtotime( $date ) > strtotime("+1 months") ) {
     //     echo "HI";
     // }
@@ -73,6 +69,13 @@
           <figcaption>
             <h2><?php the_title(); ?></h2>
             <p><?php echo $types; ?></p>
+            <p>
+              <?php
+              echo $date;
+              echo strtotime($date);
+              echo strtotime("+1 months");
+              ?>
+            </p>
             <img class="overlay" src="<?php echo $thumb['url']; ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" />
           </figcaption>
         </figure>
