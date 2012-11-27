@@ -38,9 +38,13 @@
 
     $date    = get_the_date();
 
-    if ( strtotime( $date ) > strtotime("+1 months") ) {
-        echo "HI";
-    }
+    echo $date;
+    echo strtotime($date);
+    echo strtotime("+1 months");
+
+    // if ( strtotime( $date ) > strtotime("+1 months") ) {
+    //     echo "HI";
+    // }
 
     $terms   = get_the_terms( $post->ID, 'type');
     $count   = count( $terms );
