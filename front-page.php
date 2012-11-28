@@ -41,7 +41,7 @@
     $new     = NULL;
 
     if ( ( strtotime("now") - strtotime( $date ) ) < $month ) {
-      $new   = true;
+      $new   = "new_project";
     } else {
       $new   = false;
     }
