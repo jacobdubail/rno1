@@ -1048,6 +1048,19 @@ figure {
     padding-top: 3px;
     z-index: 500;
     border-radius: 0 0 3px 3px; }
+  .figure_block .new_project {
+    content: 'new';
+    position: absolute;
+    top: 0px;
+    right: 16px;
+    height: 27px;
+    width: 26px;
+    background: #00bdf2;
+    color: #fff;
+    text-align: center;
+    padding-top: 3px;
+    z-index: 500;
+    border-radius: 0 0 3px 3px; }
   .figure_block img {
     width: 100%;
     min-width: 100%;
