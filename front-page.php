@@ -67,8 +67,8 @@
       }
     endif; // if terms
   ?>
-      <a class="project figure_block <?php echo $klasses; echo $new; ?>" href="<?php the_permalink(); ?>">
-        <figure class="<?php echo ( $cs ) ? 'case_study' : ''; ?>">
+      <a class="project figure_block <?php echo $klasses; ?>" href="<?php the_permalink(); ?>">
+        <figure class="<?php echo ( $cs ) ? 'case_study' : ''; echo $new; ?>">
           <img src="<?php echo $overlay['url']; ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>" />
           <figcaption>
             <h2><?php the_title(); ?></h2>
