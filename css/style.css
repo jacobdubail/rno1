@@ -1048,7 +1048,7 @@ figure {
     padding-top: 3px;
     z-index: 500;
     border-radius: 0 0 3px 3px; }
-  .figure_block .new_project {
+  .figure_block .new_project:before {
     content: 'new';
     position: absolute;
     top: 0px;

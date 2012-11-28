@@ -268,7 +268,7 @@ figure {
     border-radius: 0 0 3px 3px;
   }
 
-  .new_project {
+  .new_project:before {
     content: 'new';
     position: absolute;
     top: 0px;
