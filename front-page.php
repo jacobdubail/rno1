@@ -37,10 +37,7 @@
     $overlay = get_field('overlay');
 
     $date    = get_the_date();
-
-    // if ( strtotime( $date ) > strtotime("+1 months") ) {
-    //     echo "HI";
-    // }
+    $month   = 60 * 60 * 24 * 30;
 
     $terms   = get_the_terms( $post->ID, 'type');
     $count   = count( $terms );
@@ -71,9 +68,14 @@
             <p><?php echo $types; ?></p>
             <p>
               <?php
-              echo $date;
-              echo ', ' . strtotime($date);
-              echo ', ' . strtotime("+1 months");
+              if ( ( strtotime( $date ) - strtotime("now") ) > strtotime($month) ) {
+                echo "today is greater than 1 month";
+              } else {
+                echo $date;
+                echo ', ' . strtotime($date);
+                echo ', ' . strtotime("now");
+                strtotime($month)
+              }
               ?>
             </p>
             <img class="overlay" src="<?php echo $thumb['url']; ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" />
