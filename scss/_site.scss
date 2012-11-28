@@ -390,7 +390,11 @@ header.figcaption {
       }
     }
   }
-
+  ul.listless {
+    li:before {
+      display: none;
+    }
+  }
 }
 .project_entry {
 

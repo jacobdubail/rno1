@@ -110,6 +110,9 @@
     margin-bottom: 0 !important;
     padding: 0 !important;
     border: none !important;
+    &:before {
+      display: none;
+    }
   }
   a {
     text-indent: 40px;

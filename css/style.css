@@ -803,6 +803,8 @@ table {
     margin-bottom: 0 !important;
     padding: 0 !important;
     border: none !important; }
+    .social li:before {
+      display: none; }
   .social a {
     text-indent: 40px;
     white-space: nowrap;
@@ -1148,6 +1150,8 @@ header.figcaption {
         content: '//';
         margin-right: 5px;
         color: #bfbfbf; }
+  .entry ul.listless li:before {
+    display: none; }
 
 .project_entry article {
   font-size: 12px;
