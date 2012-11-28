@@ -802,7 +802,8 @@ table {
     float: left;
     margin-bottom: 0 !important;
     padding: 0 !important;
-    border: none !important; }
+    border: none !important;
+    text-indent: 0 !important; }
     .social li:before {
       display: none; }
   .social a {
