@@ -68,7 +68,7 @@
             <p><?php echo $types; ?></p>
             <p>
               <?php
-              if ( ( strtotime("now") - strtotime( $date ) ) > $month ) {
+              if ( ( strtotime("now") - strtotime( $date ) ) < $month ) {
                 echo "Add a tag<br/> date - now: ";
                 echo strtotime("now") - strtotime( $date );
                 echo '<br />month: ' . $month;
