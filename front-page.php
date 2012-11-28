@@ -74,7 +74,7 @@
                 echo $date;
                 echo ', ' . strtotime($date);
                 echo ', ' . strtotime("now");
-                strtotime($month)
+                strtotime($month);
               }
               ?>
             </p>
