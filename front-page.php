@@ -69,9 +69,9 @@
             <p>
               <?php
               if ( ( strtotime( $date ) - strtotime("now") ) > strtotime($month) ) {
-                echo "today is greater than 1 month";
-                echo ", " . ( strtotime( $date ) - strtotime("now") );
-                echo ", " . strtotime($month);
+                //echo "today is greater than 1 month";
+                echo strtotime( $date ) - strtotime("now");
+                echo '<br />' . strtotime($month);
               } else {
                 echo $date;
                 echo ', ' . strtotime($date);
