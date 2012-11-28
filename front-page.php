@@ -69,14 +69,13 @@
             <p>
               <?php
               if ( ( strtotime( $date ) - strtotime("now") ) > $month ) {
-                //echo "today is greater than 1 month";
+                echo "Add a tag<br/>";
                 echo strtotime( $date ) - strtotime("now");
                 echo '<br />' . $month;
               } else {
-                echo $date;
-                echo ', ' . strtotime($date);
-                echo ', ' . strtotime("now");
-                echo ', ' . strtotime($month);
+                echo "Don't a tag<br/>";
+                echo strtotime( $date ) - strtotime("now");
+                echo '<br />' . $month;
               }
               ?>
             </p>
