@@ -68,10 +68,10 @@
             <p><?php echo $types; ?></p>
             <p>
               <?php
-              if ( ( strtotime( $date ) - strtotime("now") ) > strtotime($month) ) {
+              if ( ( strtotime( $date ) - strtotime("now") ) > $month ) {
                 //echo "today is greater than 1 month";
                 echo strtotime( $date ) - strtotime("now");
-                echo '<br />' . strtotime($month);
+                echo '<br />' . $month;
               } else {
                 echo $date;
                 echo ', ' . strtotime($date);
