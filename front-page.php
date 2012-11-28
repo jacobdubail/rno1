@@ -38,6 +38,13 @@
 
     $date    = get_the_date();
     $month   = 60 * 60 * 24 * 30;
+    $new     = NULL;
+
+    if ( ( strtotime("now") - strtotime( $date ) ) < $month ) {
+      $new   = true;
+    } else {
+      $new   = false;
+    }
 
     $terms   = get_the_terms( $post->ID, 'type');
     $count   = count( $terms );
@@ -60,21 +67,12 @@
       }
     endif; // if terms
   ?>
-      <a class="project figure_block <?php echo $klasses; ?>" href="<?php the_permalink(); ?>">
+      <a class="project figure_block <?php echo $klasses; echo $new; ?>" href="<?php the_permalink(); ?>">
         <figure class="<?php echo ( $cs ) ? 'case_study' : ''; ?>">
           <img src="<?php echo $overlay['url']; ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>" />
           <figcaption>
             <h2><?php the_title(); ?></h2>
             <p><?php echo $types; ?></p>
-            <p>
-              <?php
-              if ( ( strtotime("now") - strtotime( $date ) ) < $month ) {
-                echo "Add a tag";
-              } else {
-                echo "Don't add a tag";
-              }
-              ?>
-            </p>
             <img class="overlay" src="<?php echo $thumb['url']; ?>" alt="<?php the_title(); ?>" title="<?php the_title(); ?>" />
           </figcaption>
         </figure>
