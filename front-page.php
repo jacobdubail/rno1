@@ -69,13 +69,9 @@
             <p>
               <?php
               if ( ( strtotime("now") - strtotime( $date ) ) < $month ) {
-                echo "Add a tag<br/> date - now: ";
-                echo strtotime("now") - strtotime( $date );
-                echo '<br />month: ' . $month;
+                echo "Add a tag";
               } else {
-                echo "Don't add a tag<br/> date - now: ";
-                echo strtotime("now") - strtotime( $date );
-                echo '<br />month: ' . $month;
+                echo "Don't add a tag";
               }
               ?>
             </p>
