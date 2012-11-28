@@ -70,7 +70,7 @@ function rno1_register_scripts() {
   wp_register_script( 'rno1_functions', '/wp-content/themes/rno1/js/script.min.js', array( 'jquery', 'rno1_plugins' ), '1', true );
   wp_enqueue_script( 'rno1_functions' );
 
-  wp_register_style( 'rno1_styles', '/wp-content/themes/rno1/css/style.css', '', '1', 'all' );
+  wp_register_style( 'rno1_styles', '/wp-content/themes/rno1/css/style.css', '', '1.1', 'all' );
   wp_enqueue_style( 'rno1_styles' );
 
 }
@@ -181,7 +181,7 @@ function rno1_get_blocks( $query ) {
         )
       );
     $query->set('meta_query', $metaq );
-  
+
   }
 }
 add_action( 'pre_get_posts', 'rno1_get_blocks' );
@@ -402,7 +402,7 @@ function swift_list_cats( $num = 4 ) {
         $cat_string.=', ';
 
     endif;
-  
+
   } // end for
   echo $cat_string;
 }
@@ -419,7 +419,7 @@ function rno1_get_excerpt($pid){
   $excerpt  = substr($excerpt, 0, 220);
   $excerpt  = substr($excerpt, 0, strripos($excerpt, " "));
   $excerpt  = trim(preg_replace( '/\s+/', ' ', $excerpt));
-  $excerpt .= "..."; 
+  $excerpt .= "...";
 //  $excerpt = $excerpt.'... <a href="'.$permalink.'">more</a>';
   return $excerpt;
 }
@@ -432,8 +432,8 @@ function custom_excerpt_length($length) {
 }
 add_filter('excerpt_length', 'custom_excerpt_length');
 
-  
-  
+
+
   // custom excerpt ellipses for 2.9+
 function custom_excerpt_more($more) {
     return '...';
