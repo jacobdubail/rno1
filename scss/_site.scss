@@ -439,14 +439,14 @@ header.figcaption {
   }
   h2 {
     border-bottom: 1px solid $lightgrey;
-    padding: 185px 0 1em;
+    padding: 155px 0 1em;
     margin-bottom: $baselineheight;
     position: relative;
     &:before {
       content: '';
       background-image: url(../images/program_marks.png);
-      width: 141px;
-      height: 141px;
+      width: 114px;
+      height: 114px;
       position: absolute;
       top: 0;
       left: 0;
