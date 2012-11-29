@@ -431,6 +431,27 @@ header.figcaption {
   }
 }
 
+/* Programs */
+.programs {
+
+  h2 {
+    @extend .ir;
+    @include background-size(contain);
+    width: 100%;
+    height: 63px;
+    background: url(../images/programs.png) no-repeat 0 0 transparent;
+  }
+  .restart {
+    background-position: -5px -152px;
+  }
+  .revolve {
+    background-position: -331px -152px;
+  }
+  .renew {
+    background-position: -654px -152px;
+  }
+}
+
 
 
 
