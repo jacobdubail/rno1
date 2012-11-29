@@ -1171,6 +1171,28 @@ header.figcaption {
     font-weight: 300; }
 
 /* Programs */
+.programs .col-1-3:last-of-type {
+  padding-right: 2%; }
+.programs h2 {
+  border-bottom: 1px solid #bfbfbf;
+  padding: 185px 0 1em;
+  margin-bottom: 1.41em;
+  position: relative; }
+  .programs h2:before {
+    content: '';
+    background-image: url(../images/program_marks.png);
+    width: 141px;
+    height: 141px;
+    position: absolute;
+    top: 0;
+    left: 0; }
+.programs .restart:before {
+  background-position: 0 0; }
+.programs .revovle:before {
+  background-position: -327px 0; }
+.programs .renew:before {
+  background-position: -650px 0; }
+
 /* POSTS */
 .post {
   padding-top: 145px;
