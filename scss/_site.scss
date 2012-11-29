@@ -434,6 +434,10 @@ header.figcaption {
 /* Programs */
 .programs {
 
+  .col-1-3 {
+    min-width: 284px;
+  }
+
   h2 {
     @extend .ir;
     @include background-size(contain);

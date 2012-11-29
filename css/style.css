@@ -1171,6 +1171,8 @@ header.figcaption {
     font-weight: 300; }
 
 /* Programs */
+.programs .col-1-3 {
+  min-width: 284px; }
 .programs h2 {
   -webkit-background-size: contain;
   -moz-background-size: contain;
