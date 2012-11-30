@@ -1155,7 +1155,8 @@ header.figcaption {
   margin-bottom: 3px; }
 .page-id-1459 .border {
   border-bottom: 1px solid #bfbfbf;
-  margin-bottom: 1.41em; }
+  margin-bottom: 1.41em;
+  padding-bottom: 1.41em; }
 
 .project_entry article {
   font-size: 12px;
