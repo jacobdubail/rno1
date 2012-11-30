@@ -1147,12 +1147,17 @@ header.figcaption {
   .entry ul.listless li:before {
     display: none; }
 
-.page-id-1459 .col-1-2 h3,
-.page-id-1459 .col-1-2 h3 + p {
-  color: #00bdf2; }
-.page-id-1459 .col-1-2 h3 {
-  font-size: 21px;
-  margin-bottom: 3px; }
+.page-id-1459 .col-1-2 {
+  width: 100%; }
+  .page-id-1459 .col-1-2 h3,
+  .page-id-1459 .col-1-2 h3 + p {
+    color: #00bdf2; }
+  .page-id-1459 .col-1-2 h3 {
+    font-size: 21px;
+    margin-bottom: 3px; }
+  @media (min-width: 992px) {
+    .page-id-1459 .col-1-2 {
+      width: 50%; } }
 .page-id-1459 .border h3 {
   border-top: 1px solid #bfbfbf;
   margin-top: 1.41em;

@@ -399,6 +399,7 @@ header.figcaption {
 
 .page-id-1459 {
   .col-1-2 {
+    width: 100%;
     h3,
     h3 + p {
       color: $blue;
@@ -406,6 +407,9 @@ header.figcaption {
     h3 {
       font-size: 21px;
       margin-bottom: 3px;
+    }
+    @include breakpoint(zebra) {
+      width: 50%;
     }
   }
   .border h3 {
