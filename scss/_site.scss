@@ -408,6 +408,10 @@ header.figcaption {
       margin-bottom: 3px;
     }
   }
+  .border {
+    border-bottom: 1px solid $lightgrey;
+    margin-bottom: $baselineheight;
+  }
 }
 
 
