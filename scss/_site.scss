@@ -132,6 +132,7 @@ figure {
 }
 
 [class*='col-'] {
+  @include transition(width .2s ease);
   float: left;
   padding-right: $columnpad;
   position: relative;

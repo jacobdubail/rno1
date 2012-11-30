@@ -943,6 +943,10 @@ figure {
   margin: 0 0 2% 0; }
 
 [class*='col-'] {
+  -webkit-transition: width 0.2s ease;
+  -moz-transition: width 0.2s ease;
+  -o-transition: width 0.2s ease;
+  transition: width 0.2s ease;
   float: left;
   padding-right: 2%;
   position: relative; }
