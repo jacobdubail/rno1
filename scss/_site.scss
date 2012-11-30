@@ -409,9 +409,9 @@ header.figcaption {
     }
   }
   .border {
-    border-bottom: 1px solid $lightgrey;
-    margin-bottom: $baselineheight;
-    padding-bottom: $baselineheight;
+    border-top: 1px solid $lightgrey;
+    margin-top: $baselineheight;
+    padding-top: $baselineheight;
   }
 }
 
