@@ -30,7 +30,9 @@ p {
   margin: 0 0 $baselineheight;
 }
 hr {
-  background: $lightgrey;
+  border: none;
+  background: transparent;
+  border-top: 1px solid $lightgrey;
   margin: $baselineheight 0;
 }
 
