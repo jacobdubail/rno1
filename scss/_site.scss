@@ -29,6 +29,10 @@ a {
 p {
   margin: 0 0 $baselineheight;
 }
+hr {
+  background: $lightgrey;
+  margin: $baselineheight 0;
+}
 
 body {
   margin : 0;
