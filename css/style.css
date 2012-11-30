@@ -1154,13 +1154,18 @@ header.figcaption {
     color: #00bdf2; }
   .page-id-1459 .col-1-2 h3 {
     font-size: 21px;
-    margin-bottom: 3px; }
+    margin-bottom: 3px;
+    padding-top: 1.41em;
+    border-top: 1px solid #bfbfbf; }
+    @media (min-width: 992px) {
+      .page-id-1459 .col-1-2 h3 {
+        border-top: none;
+        padding-top: 0; } }
   @media (min-width: 992px) {
     .page-id-1459 .col-1-2 {
       width: 50%; } }
 .page-id-1459 .border h3 {
   border-top: 1px solid #bfbfbf;
-  margin-top: 1.41em;
   padding-top: 1.41em; }
 
 .project_entry article {

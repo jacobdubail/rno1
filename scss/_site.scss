@@ -407,6 +407,12 @@ header.figcaption {
     h3 {
       font-size: 21px;
       margin-bottom: 3px;
+      padding-top: $baselineheight;
+      border-top: 1px solid $lightgrey;
+      @include breakpoint(zebra) {
+        border-top: none;
+        padding-top: 0;
+      }
     }
     @include breakpoint(zebra) {
       width: 50%;
@@ -414,7 +420,6 @@ header.figcaption {
   }
   .border h3 {
     border-top: 1px solid $lightgrey;
-    margin-top: $baselineheight;
     padding-top: $baselineheight;
   }
 }
