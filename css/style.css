@@ -1151,9 +1151,8 @@ header.figcaption {
 .page-id-1459 .col-1-2 h3 + p {
   color: #00bdf2; }
 .page-id-1459 .col-1-2 h3 {
+  font-size: 21px;
   margin-bottom: 3px; }
-.page-id-1459 .col-1-2 h3 + p {
-  margin-bottom: 2.82em; }
 
 .project_entry article {
   font-size: 12px;

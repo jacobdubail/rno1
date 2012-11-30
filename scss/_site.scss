@@ -404,10 +404,8 @@ header.figcaption {
       color: $blue;
     }
     h3 {
+      font-size: 21px;
       margin-bottom: 3px;
-    }
-    h3 + p {
-      margin-bottom: $baselineheight*2;
     }
   }
 }
