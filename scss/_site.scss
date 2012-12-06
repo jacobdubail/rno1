@@ -409,7 +409,7 @@ header.figcaption {
     width: 100%;
     h3 {
       font-size: 21px;
-      margin-bottom: 3px;
+      margin-bottom: $baselineheight/2;
       padding-top: $baselineheight;
       border-top: 1px solid $lightgrey;
       @include breakpoint(zebra) {
