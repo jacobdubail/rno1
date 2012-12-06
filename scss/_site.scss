@@ -407,10 +407,6 @@ header.figcaption {
 .page-id-1459 {
   .col-1-2 {
     width: 100%;
-    h3,
-    h3 + p {
-      color: $blue;
-    }
     h3 {
       font-size: 21px;
       margin-bottom: 3px;
@@ -419,6 +415,9 @@ header.figcaption {
       @include breakpoint(zebra) {
         border-top: none;
         padding-top: 0;
+      }
+      img {
+        display: block;
       }
     }
     @include breakpoint(zebra) {
