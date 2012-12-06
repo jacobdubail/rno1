@@ -1169,7 +1169,8 @@ header.figcaption {
         border-top: none;
         padding-top: 0; } }
     .page-id-1459 .col-1-2 h3 img {
-      display: block; }
+      display: block;
+      margin-bottom: 0.705em; }
   @media (min-width: 992px) {
     .page-id-1459 .col-1-2 {
       width: 50%; } }

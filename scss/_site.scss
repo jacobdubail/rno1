@@ -418,6 +418,7 @@ header.figcaption {
       }
       img {
         display: block;
+        margin-bottom: $baselineheight/2;
       }
     }
     @include breakpoint(zebra) {
