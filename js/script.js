@@ -68,7 +68,7 @@
   });
 
 
-  $(mg_blocks.get(Math.floor(Math.random() * mg_blocks.length))).hide();
+  $(mg_blocks.get(Math.floor(Math.random() * mg_blocks.length))).remove();
 
 
 
