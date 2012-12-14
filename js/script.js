@@ -2,7 +2,7 @@
 
   var $container = $('#blocks'),
       n          = 4,
-      mg_blocks  = $(".widget .greyscale"),
+      mg_blocks  = $(".textwidget .greyscale"),
       getcolcount = function() {
 
         var w_w = $(window).width();
