@@ -1,1 +1,1 @@
-<?php dynamic_sidebar('Sidebar Widgets'); ?>
+<?php dynamic_sidebar('Home Blocks'); ?>
