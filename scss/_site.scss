@@ -196,7 +196,16 @@ figure {
 }
 
 
-
+.greyscale {
+  img {
+    -webkit-transition: -webkit-filter .25s ease;
+    &:hover {
+      filter: url(../images/filters.svg#grayscale);
+      filter: gray;
+      -webkit-filter: grayscale(100%);
+    }
+  }
+}
 
 
 /* PROJECTS */

@@ -1,11 +1,12 @@
 (function($){
 
   var $container = $('#blocks'),
-      n = 4,
+      n          = 4,
+      mg_blocks  = $(".widget .greyscale"),
       getcolcount = function() {
 
         var w_w = $(window).width();
-        
+
 
         if ( w_w <= 480 ) {
           return 1;
@@ -65,6 +66,9 @@
   .on('click', 'img', function() {
     $('.carousel').carousel('next');
   });
+
+
+  $(mg_blocks.get(Math.floor(Math.random() * mg_blocks.length))).hide();
 
 
 

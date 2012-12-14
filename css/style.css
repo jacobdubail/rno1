@@ -1000,6 +1000,13 @@ figure {
   .grid-pad [class*='col-']:last-of-type {
     padding-right: 2%; }
 
+.greyscale img {
+  -webkit-transition: -webkit-filter .25s ease; }
+  .greyscale img:hover {
+    filter: url(../images/filters.svg#grayscale);
+    filter: gray;
+    -webkit-filter: grayscale(100%); }
+
 /* PROJECTS */
 .figure_block {
   width: 98.5%;
