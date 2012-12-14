@@ -21,12 +21,13 @@
 
   n = getcolcount();
 
+  $(mg_blocks.get(Math.floor(Math.random() * mg_blocks.length))).hide().remove();
 
   $container.imagesLoaded( function() {
     $container.isotope({
-      resizable: false,
+      resizable    : false,
       itemSelector : '.project',
-      masonry: { columnWidth: $container.width() / n }
+      masonry      : { columnWidth: $container.width() / n }
     });
   });
 
@@ -34,7 +35,8 @@
     n = getcolcount();
 
     $container.isotope({
-      masonry: { columnWidth: $container.width() / n }
+      itemSelector : '.project',
+      masonry      : { columnWidth: $container.width() / n }
     });
   });
 
@@ -68,7 +70,7 @@
   });
 
 
-  $(mg_blocks.get(Math.floor(Math.random() * mg_blocks.length))).hide().remove();
+
 
 
 
