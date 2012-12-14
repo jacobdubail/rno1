@@ -20,6 +20,16 @@ register_sidebar( array(
     'after_title'   => '</h3>'
   ) );
 
+register_sidebar( array(
+    'name' => 'Home Blocks',
+    'id'   => 'home-blocks',
+    'description'   => 'These are blocks for the homepage.',
+    'before_widget' => '',
+    'after_widget'  => '',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>'
+  ) );
+
 add_theme_support( 'nav-menus' );
 add_action( 'init', 'register_my_menu' );
 function register_my_menu() {
