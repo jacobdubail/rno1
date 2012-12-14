@@ -82,6 +82,12 @@ body {
   padding: 0;
   top: 0;
   left: 10px;
+  -webkit-transition: -webkit-filter .25s ease;
+  &:hover {
+    filter: url(../images/filters.svg#grayscale);
+    filter: gray;
+    -webkit-filter: grayscale(100%);
+  }
 }
 
 #blocks {

@@ -911,7 +911,12 @@ body {
   white-space: nowrap;
   padding: 0;
   top: 0;
-  left: 10px; }
+  left: 10px;
+  -webkit-transition: -webkit-filter .25s ease; }
+  #logo:hover {
+    filter: url(../images/filters.svg#grayscale);
+    filter: gray;
+    -webkit-filter: grayscale(100%); }
 
 #blocks {
   width: 100%;
