@@ -231,7 +231,7 @@ function jtd_twitter_status( $username = 'jacobdubail', $maxTweets = 3 ) {
       $tweets = $response;
     }
 
-    set_transient( 'jdtweets'.$username, $tweets, 60*60*3 );
+    set_transient( 'jdtweets'.$username, $tweets, 60*60 );
   }
 
   $tweets = json_decode( $tweets );
