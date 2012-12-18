@@ -874,6 +874,9 @@ hr {
   border-top: 1px solid #bfbfbf;
   margin: 1.41em 0; }
 
+.fluid-width-video-wrapper iframe {
+  border: none; }
+
 body {
   margin: 0;
   padding: 0;

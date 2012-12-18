@@ -35,6 +35,7 @@ hr {
   border-top: 1px solid $lightgrey;
   margin: $baselineheight 0;
 }
+.fluid-width-video-wrapper iframe { border: none; }
 
 body {
   margin : 0;
