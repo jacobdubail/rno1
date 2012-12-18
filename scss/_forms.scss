@@ -8,7 +8,7 @@ input[type=url],
 input[type=date],
 input[type="button"],
 textarea {
-  @include background(linear-gradient(top, #fbfbfb, #f7f7f7));
+  @include background(linear-gradient(#fbfbfb, #f7f7f7));
   padding: 5px 10px;
   border: 1px solid #BCBCBC;
   max-width: 440px;

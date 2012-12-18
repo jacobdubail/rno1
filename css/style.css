@@ -780,17 +780,6 @@ table {
       list-style: none; }
       .footer .widget li:last-child {
         border-bottom: none; }
-      .footer .widget li .location_details {
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-        opacity: 0;
-        -webkit-transition: opacity 0.2s ease;
-        -moz-transition: opacity 0.2s ease;
-        -o-transition: opacity 0.2s ease;
-        transition: opacity 0.2s ease;
-        color: #bfbfbf; }
-    .footer .widget:hover .location_details {
-      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-      opacity: 1; }
     .footer .widget a {
       color: #00bdf2; }
       .footer .widget a:hover {
@@ -1403,6 +1392,18 @@ header.figcaption {
       .client_logos img {
         width: 24.5%; } }
 
+.locations .location_details {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease;
+  -moz-transition: opacity 0.2s ease;
+  -o-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease;
+  color: #bfbfbf; }
+.locations:hover .location_details {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1; }
+
 input[type=text],
 input[type=password],
 input[type=email],
@@ -1414,10 +1415,10 @@ input[type=date],
 input[type="button"],
 textarea {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fbfbfb), color-stop(100%, #f7f7f7));
-  background: -webkit-linear-gradient(top, #fbfbfb, #f7f7f7);
-  background: -moz-linear-gradient(top, #fbfbfb, #f7f7f7);
-  background: -o-linear-gradient(top, #fbfbfb, #f7f7f7);
-  background: linear-gradient(top, #fbfbfb, #f7f7f7);
+  background: -webkit-linear-gradient(#fbfbfb, #f7f7f7);
+  background: -moz-linear-gradient(#fbfbfb, #f7f7f7);
+  background: -o-linear-gradient(#fbfbfb, #f7f7f7);
+  background: linear-gradient(#fbfbfb, #f7f7f7);
   padding: 5px 10px;
   border: 1px solid #BCBCBC;
   max-width: 440px;

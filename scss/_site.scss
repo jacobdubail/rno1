@@ -681,7 +681,16 @@ header.figcaption {
 }
 
 
-
+.locations {
+  .location_details {
+    @include opacity(0);
+    @include transition(opacity .2s ease);
+    color: $lightgrey;
+  }
+  &:hover .location_details {
+    @include opacity(1);
+  }
+}
 
 
 
