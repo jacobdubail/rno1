@@ -185,9 +185,15 @@ figure {
   }
   @include breakpoint(kitteh) {
     width: 50%;
+    &:nth-child(3n) {
+      clear: both;
+    }
   }
   @include breakpoint(zebra) {
     width: 25%;
+    &:nth-child(3n) {
+      clear: none;
+    }
   }
 }
 .col-1-8 {
