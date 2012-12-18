@@ -2,7 +2,7 @@
 
 
 
-  <secion id="blocks">
+  <section id="blocks">
 
     <div id="vimeo" class="project figure_block project-double">
       <iframe src="http://player.vimeo.com/video/49452532?title=0&amp;byline=0&amp;portrait=0&amp;color=00BDF2" width="1024" height="576" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
@@ -70,7 +70,6 @@
   <?php
       endwhile; endif;
   ?>
-
-      </section>
+  </section>
 
 <?php get_footer(); ?>
