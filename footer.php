@@ -1,4 +1,4 @@
-  </section>
+  </div>
 
   <footer class="footer cf">
     <?php dynamic_sidebar('Footer Widgets'); ?>

@@ -59,4 +59,4 @@
     <?php endif; ?>
   </nav>
 
-  <section class="main-content cf grid">
+  <div class="main-content cf grid">
