@@ -780,6 +780,17 @@ table {
       list-style: none; }
       .footer .widget li:last-child {
         border-bottom: none; }
+      .footer .widget li .location_details {
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        opacity: 0;
+        -webkit-transition: opacity 0.2s ease;
+        -moz-transition: opacity 0.2s ease;
+        -o-transition: opacity 0.2s ease;
+        transition: opacity 0.2s ease;
+        color: #bfbfbf; }
+    .footer .widget:hover .location_details {
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+      opacity: 1; }
     .footer .widget a {
       color: #00bdf2; }
       .footer .widget a:hover {
