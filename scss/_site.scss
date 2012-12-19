@@ -637,22 +637,24 @@ header.figcaption {
     img {
 //      outline: 1px solid red;
       margin-bottom: 0;
-      width: 130%;
+      width: 220%;
       height: auto;
       max-width: 700px;
-      @include breakpoint(snail) {
-        width: 110%;
-      }
-      @include breakpoint(meerkat) {
-        width: 140%;
-      }
-      @include breakpoint(zebra) {
-        width: 170%;
-      }
-      @include breakpoint(elephant) {
-        width: 120%;
-      }
-    }
+      position: relative;
+      //left: -30%;
+      // @include breakpoint(snail) {
+      //   width: 110%;
+      // }
+       @include breakpoint(meerkat) {
+         left: -30%;
+       }
+      // @include breakpoint(zebra) {
+      //   width: 170%;
+      // }
+      // @include breakpoint(elephant) {
+      //   width: 120%;
+      // }
+    } // end img
   }
 }
 
