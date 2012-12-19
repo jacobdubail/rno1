@@ -1145,6 +1145,16 @@ header.figcaption {
     header.figcaption .meta a {
       font-size: 11px;
       color: #bfbfbf; }
+  header.figcaption .sharing {
+    position: absolute;
+    top: 42px;
+    right: 0; }
+    header.figcaption .sharing .fb-like {
+      width: 90px; }
+    header.figcaption .sharing .twitter-share-button.twitter-count-horizontal {
+      position: relative;
+      top: 2px;
+      width: 90px !important; }
 
 /* ENTRIES */
 .entry {

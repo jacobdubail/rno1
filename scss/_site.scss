@@ -377,6 +377,19 @@ header.figcaption {
       color: $lightgrey;
     }
   }
+  .sharing {
+    position: absolute;
+    top: 42px;
+    right: 0;
+    .fb-like {
+      width: 90px;
+    }
+    .twitter-share-button.twitter-count-horizontal {
+      position: relative;
+      top: 2px;
+      width: 90px !important;
+    }
+  }
 }
 
 
