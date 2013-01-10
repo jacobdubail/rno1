@@ -1100,6 +1100,7 @@ figure {
     right: 0;
     display: block;
     opacity: 0;
+    filter: alpha(opacity=00);
     -webkit-transition: opacity 0.5s ease;
     -moz-transition: opacity 0.5s ease;
     -o-transition: opacity 0.5s ease;
@@ -1111,7 +1112,9 @@ figure {
     .figure_block:hover h2, .figure_block:hover p {
       color: #00bdf2; }
     .figure_block:hover .overlay {
-      opacity: 1; }
+      opacity: 1;
+      filter: alpha(opacity=99);
+    }
 
 div .figcaption,
 figcaption {
