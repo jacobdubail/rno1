@@ -326,9 +326,9 @@ figure {
     display: block;
     opacity: 0;
     @include transition(opacity .5s ease);
-    .chrome & {
-      top: -1px;
-    }
+    // .chrome & {
+    //   top: -1px;
+    // }
   }
 
   &:hover {
