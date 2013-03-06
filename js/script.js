@@ -10,9 +10,9 @@
 
         if ( w_w <= 480 ) {
           return 1;
-        } else if ( w_w <= 768 && w_w > 480 ) {
+        } else if ( w_w <= 765 && w_w > 480 ) {
           return 2;
-        } else if ( w_w <= 1100 && w_w > 768) {
+        } else if ( w_w <= 1100 && w_w > 765) {
           return 3;
         } else {
           return 4;
