@@ -9,7 +9,7 @@
     @media (min-width: 992px) { @content; }
   }
   @else if $point == meerkat {
-    @media (min-width: 768px)  { @content; }
+    @media (min-width: 767px)  { @content; }
   }
   @else if $point == kitteh {
     @media (min-width: 600px)  { @content; }
