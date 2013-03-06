@@ -80,7 +80,7 @@ function rno1_register_scripts() {
   wp_register_script( 'rno1_functions', '/wp-content/themes/rno1/js/script.min.js', array( 'jquery', 'rno1_plugins' ), '1', true );
   wp_enqueue_script( 'rno1_functions' );
 
-  wp_register_style( 'rno1_styles', '/wp-content/themes/rno1/css/style.css', '', '1.26', 'screen and (min-width: 100px)' );
+  wp_register_style( 'rno1_styles', '/wp-content/themes/rno1/css/style.css', '', '1.27', 'screen and (min-width: 100px)' );
   wp_enqueue_style( 'rno1_styles' );
 
 }

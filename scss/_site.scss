@@ -241,12 +241,12 @@ figure {
   }
 
   @include breakpoint(snail) {
-    width: 48%;
+    width: 47.8%;
   }
   @include breakpoint(meerkat) {
-    width: 31.3%;
+    width: 31.2%;
     &.project-double {
-      width: 64.6%;
+      width: 64.5%;
     }
   }
   @include breakpoint(hippo) {
