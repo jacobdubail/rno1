@@ -200,7 +200,7 @@ function rno1_get_blocks( $query ) {
 function rno1_get_projects( $query ) {
   if ( $query->is_main_query() && $query->is_home() ) {
     $query->set( 'post_type',      'projects' );
-    $query->set( 'posts_per_page', -1 );
+    //$query->set( 'posts_per_page', 10 );
     $query->set( 'orderby',        'rand' );
   }
 }
