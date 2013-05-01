@@ -68,10 +68,8 @@
         </a>
 
       <?php endwhile; ?>
-      </section><?php // end blocks ?>
       <?php get_template_part( 'inc/nav' ); ?>
-    <?php else : ?>
-      </section><?php // end blocks ?>
     <?php endif; ?>
+  </section>
 
 <?php get_footer(); ?>
