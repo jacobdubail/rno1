@@ -70,6 +70,6 @@
       <?php endwhile; ?>
     <?php endif; ?>
   </section>
-  <?php get_template_part( 'inc/nav' ); ?>
+  <?php //get_template_part( 'inc/nav' ); ?>
 
 <?php get_footer(); ?>
