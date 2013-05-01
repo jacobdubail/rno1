@@ -19,17 +19,14 @@
 
     <?php get_sidebar('home'); ?>
 
-
-  <?php 
-    $date    = get_the_date();
-    $month   = 60 * 60 * 24 * 30;
-  ?>
-
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
   <?php
     $thumb   = get_field('thumbnail');
     $overlay = get_field('overlay');
+
+    $date    = get_the_date();
+    $month   = 60 * 60 * 24 * 30;
     $new     = NULL;
 
     if ( ( strtotime("now") - strtotime( $date ) ) < $month ) {
