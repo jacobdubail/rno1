@@ -722,47 +722,25 @@ header.figcaption {
 
 
 #awwwards {
-  position:absolute;
-  top:40px;
+  position:fixed;
+  top: 10px;
   z-index:9999;
+  right: 0;
   @media (max-width: 767px) {
     display: none;
   }
+  a {
+    display:block;
+    width:70px;
+    height:105px;
+    text-indent:-8000px;
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    overflow:hidden;
+    background-image:url('../images/awwwards_nominee_white_right.png');
+  }
 }
 
-/* Left */
-
-#awwwards.left {
-  left:0;
-}
-
-/* Right */
-
-#awwwards.right {
-  right:0;
-}
-
-/* Link */
-
-#awwwards a {
-  display:block;
-  width:70px;
-  height:105px;
-  text-indent:-8000px;
-  background-repeat:no-repeat;
-  background-position: 0 0;
-  overflow:hidden;
-}
-
-
-/* White */
-
-#awwwards.left.white a {
-  background-image:url('../images/awwwards_nominee_white_left.png');
-}
-#awwwards.right.white a {
-  background-image:url('../images/awwwards_nominee_white_right.png');
-}
 
 @media 
 only screen and (-Webkit-min-device-pixel-ratio: 1.5),
@@ -776,14 +754,6 @@ only screen and (min-device-pixel-ratio: 1.5) {
     -o-background-size:70px 105px;
     -webkit-background-size:70px 105px;
     background-size:70px 105px;
-  }
-
-  /* White */
-
-  #awwwards.left.white a {
-    background-image:url('ribbons/awwwards_nominee_white_left2x.png');
-  }
-  #awwwards.right.white a {
     background-image:url('ribbons/awwwards_nominee_white_right2x.png');
   }
 }
