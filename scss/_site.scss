@@ -715,3 +715,75 @@ header.figcaption {
 
 
 
+
+
+
+
+
+
+#awwwards {
+  position:absolute;
+  top:40px;
+  z-index:9999;
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+/* Left */
+
+#awwwards.left {
+  left:0;
+}
+
+/* Right */
+
+#awwwards.right {
+  right:0;
+}
+
+/* Link */
+
+#awwwards a {
+  display:block;
+  width:70px;
+  height:105px;
+  text-indent:-8000px;
+  background-repeat:no-repeat;
+  background-position: 0 0;
+  overflow:hidden;
+}
+
+
+/* White */
+
+#awwwards.left.white a {
+  background-image:url('../images/awwwards_nominee_white_left.png');
+}
+#awwwards.right.white a {
+  background-image:url('../images/awwwards_nominee_white_right.png');
+}
+
+@media 
+only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+
+  #awwwards a {
+    -moz-background-size: 70px 105px;
+    -ie-background-size:70px 105px;
+    -o-background-size:70px 105px;
+    -webkit-background-size:70px 105px;
+    background-size:70px 105px;
+  }
+
+  /* White */
+
+  #awwwards.left.white a {
+    background-image:url('ribbons/awwwards_nominee_white_left2x.png');
+  }
+  #awwwards.right.white a {
+    background-image:url('ribbons/awwwards_nominee_white_right2x.png');
+  }
+}
