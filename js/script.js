@@ -70,6 +70,61 @@
   });
 
 
+  $(document).bind( 'gform_post_render', function() {
+
+    var $win        = $(window);
+    var orientation = ( $win.width() > 767 ) ? "horizontal" : "vertical";
+
+    var $budget = $( "#input_3_32" ).addClass('visuallyhidden');
+    var labels  = $( "<ol id='labels' class='"+orientation+"' />" ).insertAfter( $budget );
+    var slider  = $( "<div id='slider' />" ).insertAfter( $budget ).slider({
+      min: 5000,
+      max: 50000,
+      step: 5000,
+      orientation: orientation,
+      //range: "min",
+      value: ( $budget[ 0 ].selectedIndex + 1 ) * 5000,
+      slide: function( event, ui ) {
+        $budget[ 0 ].selectedIndex = ui.value / 5000 - 1;
+      }
+    });
+
+    $budget.find("option").each(function() {
+      var $this = $(this);
+      $("<li>", {
+        'data-value': $this.val(),
+        text: $this.text()
+      }).appendTo(labels);
+    });
+
+    labels.on( 'click', 'li', function() {
+      var $this = $(this);
+      $budget[ 0 ].selectedIndex = $this.data('value') / 5000 - 1;
+      $budget.trigger('change');
+    });
+
+    $budget.change(function() {
+      slider.slider( "value", ( this.selectedIndex + 1 ) * 5000 );
+    });
+
+    $win.resize( $.throttle( 250, function() {
+      if ( $win.width() > 767 ) {
+        orientation = "horizontal";
+        labels.removeClass('vertical');
+      } else {
+        orientation = "vertical";
+        labels.addClass('vertical');
+      }
+
+      slider.slider( "option", "orientation", orientation );
+
+    }));
+
+
+
+  });
+
+
 
 
 

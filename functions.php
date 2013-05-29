@@ -62,22 +62,18 @@ add_filter( 'body_class', 'category_id_class' );
 
 add_action( 'wp_enqueue_scripts', 'rno1_register_scripts' );
 function rno1_register_scripts() {
-  wp_deregister_script( 'jquery' );
   wp_deregister_script( 'l10n' );
 
-  $jQuery = "http" . ( $_SERVER['SERVER_PORT'] == 443 ? "s" : "" ) . "://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js";
-  $test   = @fopen( $jQuery, 'r' );
-  if ( $test === false ) {
-    $jQuery = get_template_directory_uri() . '/js/jquery.min.js';
-  }
-
-  wp_register_script( 'jquery', $jQuery, false, '1.8.2', true );
   wp_enqueue_script( 'jquery' );
+
+  if ( is_page( '2245' ) ) {
+    wp_enqueue_script( 'jquery-ui-slider' );
+  }
 
   wp_register_script( 'rno1_plugins', '/wp-content/themes/rno1/js/plugins.min.js', array( 'jquery' ), '1', true );
   wp_enqueue_script( 'rno1_plugins' );
 
-  wp_register_script( 'rno1_functions', '/wp-content/themes/rno1/js/script.min.js', array( 'jquery', 'rno1_plugins' ), '1', true );
+  wp_register_script( 'rno1_functions', '/wp-content/themes/rno1/js/script.js', array( 'jquery', 'rno1_plugins' ), '1', true );
   wp_enqueue_script( 'rno1_functions' );
 
   wp_register_style( 'rno1_styles', '/wp-content/themes/rno1/css/style.css', '', '1.29', 'screen and (min-width: 100px)' );

@@ -1,0 +1,216 @@
+#gform_wrapper_3 {
+
+	//max-width: 1000px;
+	margin: 2em 0;
+
+	.gform_fields {
+		position: relative;
+	}
+
+	.gfield:last-child {
+		margin: 0;
+	}
+	
+	@include breakpoint( meerkat ) {
+		.gf_right_half,
+		.gf_left_half {
+			@include inline-block;
+			width: 48%;
+			input, textarea {
+				max-width: none;
+			}
+		}
+		.gf_left_half {
+			margin-right: 4%;
+		}
+	}
+
+	fieldset {
+		background: $lgrey;
+		margin: 0 0 1.5em;
+		padding: 4em 2% 1em;
+		border: none;
+		top: 0;
+		position: relative;
+		max-width: 100%;
+		width: 100%;
+
+		@include breakpoint( meerkat ) {
+			padding: 4em 10% 1em;
+		}
+
+		legend {
+			border: 0;
+			padding: 0;
+			color: $c6;
+			font-size: 13px;
+			text-transform: uppercase;
+			text-align: center;
+			position: relative;
+			top: 3em;
+		}
+	}
+
+	.gfield_label {
+		margin-bottom: 7px;
+		max-width: 360px;
+	}
+	
+	.gfield_radio label,
+	.gfield_checkbox label,
+	.gfield_label {
+		color: $blue;
+		font-size: 12px;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+	
+	.gfield_radio,
+	.gfield_checkbox {
+		@extend .cf;
+		position: relative;
+		li {
+			width: 100%;
+			margin-bottom: 9px;
+		}
+
+		@include breakpoint( meerkat ) {
+			li {
+				@include inline-block;
+				width: 20%;
+				text-align: center;
+			}
+		}
+	}
+	
+	input[type=radio],
+	input[type=checkbox] {
+		display: none;
+
+		+ label {
+			position: relative;
+			margin-left: 0;
+			padding: 4px 0 0 33px;
+			span {
+				@include inline-block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				text-align: center;
+				font-size: 20px;
+				text-indent: 0;
+				width: 23px;
+				height: 23px;
+				line-height: 23px;
+				background: #fff;
+				margin-right: .5em;
+				border: none;
+			}	
+		}
+
+		&:checked + label span {
+			@extend .icon-ok;
+			color: #fff;
+			background: $blue;
+		}
+	}
+
+	#input_3_8 {
+		li {
+			text-align: left;
+			width: 40%;
+		}
+	}
+
+	input[type=text], 
+	input[type=password], 
+	input[type=email], 
+	input[type=number], 
+	input[type=tel], 
+	input[type=search], 
+	input[type=url], 
+	input[type=date], 
+	//input[type="button"], 
+	textarea {
+		background: #fff;
+		height: 40px;
+		padding: 5px 10px;
+		border: 1px solid #e6e6e6;
+		outline: none;
+		max-width: none;
+
+		&:focus {
+			border-color: #fff;
+		}
+	}
+
+	textarea {
+		height: 90px;
+		width: 100%;
+	}
+
+
+	.gform_footer {
+		text-align: center;
+
+		input[type=submit] {
+			max-width: none;
+			width: 300px;
+			font-size: 14px;
+			padding: 10px;
+			text-transform: uppercase
+		}
+	}
+
+
+	#labels {
+		position: relative;
+		@extend .cf;
+		top: 1em;
+		margin: 0;
+		padding: 0;
+		li {
+			@include inline-block;
+			width: 11.111%;
+			list-style: none;
+			position: relative;
+			padding: 0;
+			margin: 0;
+			text-align: left;
+			text-indent: -15px;
+			color: $blue;
+			font-size: 12px;
+			cursor: pointer;
+
+			&:first-child {
+				&:before {
+					left: 3px;
+				}
+			}
+			
+			&:last-child {
+				position: absolute;
+				right: -22px;
+				text-align: right;
+				&:before {
+					left: auto;
+					right: 22px;
+					top: -17px;
+				}
+			}
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: -18px;
+				left: 0;
+				width: 1px;
+				height: 5px;
+				background: #ccc;
+			}
+		}
+	}
+
+
+
+}
