@@ -66,7 +66,7 @@ function rno1_register_scripts() {
 
   wp_enqueue_script( 'jquery' );
 
-  if ( is_page( '2245' ) ) {
+  if ( is_page( 'meet-project-pal' ) ) {
     wp_enqueue_script( 'jquery-ui-slider' );
   }
 
