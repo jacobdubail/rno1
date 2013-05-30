@@ -152,6 +152,13 @@
 			@extend .icon-arrow-up;
 			text-transform: uppercase;
 			color: $blue;
+			&:hover {
+				color: $c6;
+				&:before {
+					background: $blue;
+					color: #fff;
+				}
+			}
 			&:before {
 				//content: '';
 				//@extend .icon-
@@ -162,8 +169,8 @@
 				width: 23px;
 				height: 23px;
 				line-height: 23px;
-				background: $blue;
-				color: #fff;
+				background: #fff;
+				color: $blue;
 				margin-right: .5em;
 				border: none;
 
