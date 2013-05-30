@@ -82,6 +82,7 @@
 		cursor: pointer;
 	}
 	
+	//.gfield_file_upload,
 	.gfield_radio,
 	.gfield_checkbox {
 		@extend .cf;
@@ -103,6 +104,7 @@
 		}
 	}
 	
+
 	input[type=radio],
 	input[type=checkbox] {
 		display: none;
@@ -134,6 +136,34 @@
 			@extend .icon-ok;
 			color: #fff;
 			background: $blue;
+		}
+	}
+
+	.gfield_file_upload {
+		
+		input {
+			display: none;
+		}
+		label {
+			@extend .icon-arrow-up;
+			text-transform: uppercase;
+			color: $blue;
+			&:before {
+				//content: '';
+				//@extend .icon-
+				@include inline-block;
+				text-align: center;
+				font-size: 20px;
+				text-indent: 0;
+				width: 23px;
+				height: 23px;
+				line-height: 23px;
+				background: $blue;
+				color: #fff;
+				margin-right: .5em;
+				border: none;
+
+			}
 		}
 	}
 
