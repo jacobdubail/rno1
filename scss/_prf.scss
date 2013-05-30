@@ -266,6 +266,9 @@
 			display: block;
 			//outline: none;
 		}
+		.gfield_label {
+			margin: .5em 0 9px 5%;
+		}
 		label {
 			color: #fff;
 			width: 100%;
@@ -280,6 +283,11 @@
 				background: #fff;
 				color: $blue;
 			}
+		}
+
+		input[type=text] {
+			margin: 0 0 1.5em 5%;
+			max-width: 90%;
 		}
 
 		.close {
