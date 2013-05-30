@@ -59,6 +59,10 @@
 			top: 3em;
 			display: block;
 			width: 100%;
+
+			.lt-ie9 & {
+				top: 0;
+			}
 		}
 	}
 
