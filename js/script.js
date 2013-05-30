@@ -129,10 +129,14 @@
       });
     });
 
-    // $("body").on('click', function() {
-    //   if ( $(".dropdown").is(':visible') )
-    //     $(".dropdown").hide();
-    // });
+    $("body").on('click', function(e) {
+      console.log( e.target.nodeName.toLowerCase() );
+      var nodeNames = [ 'legend', 'fieldset' ];
+
+      if ( -1 !== $.inArray( e.target.nodeName.toLowerCase(), nodeNames ) ) {
+        $(".dropdown").hide();
+      }
+    });
 
 
 
