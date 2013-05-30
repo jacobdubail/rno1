@@ -28,9 +28,12 @@
   <?php wp_head(); ?>
 
   <!--[if (lt IE 9) & (!IEMobile)]>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/no_mq.css">
-    <script src="js/selectivizr.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/respond.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>js/selectivizr.min.js"></script>
   <![endif]-->
+
+
+  <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/no_mq.css"> -->
 
 </head>
 
