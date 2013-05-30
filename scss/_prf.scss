@@ -34,6 +34,10 @@
 		}
 	}
 
+	&.gf_browser_opera fieldset legend {
+		top: -1.5em;
+	}
+
 	fieldset {
 		background: $lgrey;
 		margin: 0 0 1.5em;

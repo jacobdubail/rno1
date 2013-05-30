@@ -2774,6 +2774,8 @@ button.ui-button::-moz-focus-inner {
         max-width: none; }
     #gform_wrapper_3 .gf_left_half {
       margin-right: 4%; } }
+  #gform_wrapper_3.gf_browser_opera fieldset legend {
+    top: -1.5em; }
   #gform_wrapper_3 fieldset {
     background: #f2f2f2;
     margin: 0 0 1.5em;
