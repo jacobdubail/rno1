@@ -245,7 +245,7 @@
 				height: auto;
 				text-align: left;
 				//line-height: auto;
-				text-indent: -15px;
+				text-indent: 0;
 
 				&:first-child {
 					position: absolute;
@@ -367,6 +367,13 @@
 	}
 	.dropdown_5 {
 		left: 80%;
+	}
+
+
+	#fieldset_1 .dropdown {
+		top: auto;
+		bottom: -86px;
+		left: 71%;
 	}
 
 
