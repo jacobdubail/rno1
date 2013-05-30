@@ -120,6 +120,21 @@
 
     }));
 
+    $(".dropdown").each(function() {
+      var $this = $(this);
+      $("<span />", {
+        text: '\u00D7',
+        class: 'close'
+      }).appendTo( $this ).on('click', function() {
+        $(this).parent().hide();
+      });
+    });
+
+    // $("body").on('click', function() {
+    //   if ( $(".dropdown").is(':visible') )
+    //     $(".dropdown").hide();
+    // });
+
 
 
   });

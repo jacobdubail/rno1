@@ -89,6 +89,7 @@
 		li {
 			width: 100%;
 			margin-bottom: 9px;
+			//outline: 1px solid red;
 		}
 
 		@include breakpoint( meerkat ) {
@@ -96,6 +97,8 @@
 				@include inline-block;
 				width: 20%;
 				text-align: center;
+				padding-left: 0;
+				margin-bottom: 0;
 			}
 		}
 	}
@@ -107,7 +110,9 @@
 		+ label {
 			position: relative;
 			margin-left: 0;
-			padding: 4px 0 0 33px;
+			padding: 6px 0 0 33px;
+			line-height: 23px;
+			white-space: nowrap;
 			span {
 				@include inline-block;
 				position: absolute;
@@ -136,6 +141,7 @@
 		li {
 			text-align: left;
 			width: 40%;
+			margin-left: 18px;
 		}
 	}
 	.input_thirds {
@@ -232,6 +238,78 @@
 				background: #ccc;
 			}
 		}
+	}
+
+	.dropdown {
+		@extend .visuallyhidden;
+		position: absolute;
+		top: 24px;
+		width: 19.9%;
+		padding: 0 0 1em;
+		z-index: 500;
+		background: $blue;
+		color: #fff;
+
+		@include breakpoint( meerkat ) {
+	    clip: auto;
+	    height: auto;
+	    margin: 0;
+	    overflow: visible;
+		}
+
+		li {
+			width: 100%;
+			margin: 0 0 1em;
+			padding: 0 4px 5px 14px;
+			text-indent: 0;
+			text-align: left;
+			display: block;
+			//outline: none;
+		}
+		label {
+			color: #fff;
+			width: 100%;
+		}
+		input + label {
+			padding: 0 0 0 30px;
+			white-space: normal;
+			display: block;
+		}
+		input:checked + label {
+			span {
+				background: #fff;
+				color: $blue;
+			}
+		}
+
+		.close {
+			display: block;
+			padding: 0;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			background: rgba( white,0.4);
+			width: 2em;
+			height: 2em;
+			text-align: center;
+			line-height: 2em;
+			cursor: pointer;
+			&:hover {
+				background: #fff;
+				color: $blue;
+			}
+		}
+
+
+	}
+
+	.dropdown_1 {
+		//left: 2.75%;
+		left: 0;
+	}
+	.dropdown_2 {
+		//left: 23.75%;
+		left: 20%;
 	}
 
 
