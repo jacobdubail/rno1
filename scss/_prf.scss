@@ -195,14 +195,14 @@
 
 
 	#labels {
-		position: relative;
-		@extend .cf;
-		top: 1em;
-		margin: 0;
-		padding: 0;
+		position: absolute;
+		top: -1em;
+		left: 4em;
+		width: 5em;
+
 		li {
-			@include inline-block;
-			width: 11.111%;
+			display: block;
+			width: 100%;
 			list-style: none;
 			position: relative;
 			padding: 0;
@@ -210,37 +210,77 @@
 			text-align: left;
 			text-indent: -15px;
 			color: $blue;
-			font-size: 12px;
 			cursor: pointer;
+			font-size: 12px;
+			height: 39px;
+			line-height: 39px;
 
-			&:first-child {
-				&:before {
-					left: 3px;
-				}
-			}
-			
-			&:last-child {
-				position: absolute;
-				right: -22px;
-				text-align: right;
-				&:before {
-					left: auto;
-					right: 22px;
-					top: -17px;
-				}
+			&:hover {
+				color: $c6;
 			}
 
 			&:before {
 				content: '';
 				position: absolute;
-				top: -18px;
-				left: 0;
-				width: 1px;
-				height: 5px;
+				top: 50%;
+				left: -4.33em;
+				height: 1px;
+				width: 5px;
 				background: #ccc;
 			}
 		}
+
+		@include breakpoint( meerkat ) {
+			position: relative;
+			@extend .cf;
+			top: 1em;
+			margin: 0;
+			padding: 0;
+			width:100%;
+			left:0;
+			li {
+				@include inline-block;
+				float: right;
+				width: 11.111%;
+				height: auto;
+				text-align: left;
+				//line-height: auto;
+				text-indent: -15px;
+
+				&:first-child {
+					position: absolute;
+					right: -22px;
+					z-index: 100;
+					text-align: right;
+					text-indent: 0;
+					&:before {
+						right: 22px;
+						left: auto;
+						z-index: -1;
+					}
+				}
+				
+				&:last-child {
+					top: 0;
+					text-align: left;
+					&:before {
+						left: 3px;
+					}
+				}
+
+				&:before {
+					top: -17px;
+					left: 0;
+					width: 1px;
+					height: 5px;
+				}
+			}
+		}
 	}
+
+
+
+
 
 	.dropdown {
 		@extend .visuallyhidden;

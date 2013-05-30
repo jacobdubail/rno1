@@ -82,7 +82,6 @@
       max: 50000,
       step: 5000,
       orientation: orientation,
-      //range: "min",
       value: ( $budget[ 0 ].selectedIndex + 1 ) * 5000,
       slide: function( event, ui ) {
         $budget[ 0 ].selectedIndex = ui.value / 5000 - 1;
@@ -94,7 +93,7 @@
       $("<li>", {
         'data-value': $this.val(),
         text: $this.text()
-      }).appendTo(labels);
+      }).prependTo(labels);
     });
 
     labels.on( 'click', 'li', function() {
