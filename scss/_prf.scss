@@ -141,7 +141,9 @@
 		li {
 			text-align: left;
 			width: 40%;
-			margin-left: 18px;
+			@include breakpoint( meerkat ) {
+				margin-left: 18px;
+			}
 		}
 	}
 	.input_thirds {
