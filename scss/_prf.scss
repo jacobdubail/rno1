@@ -243,9 +243,11 @@
 				float: right;
 				width: 11.111%;
 				height: auto;
-				text-align: left;
+				text-align: center;
 				//line-height: auto;
 				text-indent: 0;
+				left: -5.555%;
+				z-index: 5;
 
 				&:first-child {
 					position: absolute;
@@ -253,6 +255,7 @@
 					z-index: 100;
 					text-align: right;
 					text-indent: 0;
+					left: auto;
 					&:before {
 						right: 22px;
 						left: auto;
@@ -262,8 +265,10 @@
 				
 				&:last-child {
 					top: 0;
+					left: 0;
 					text-align: left;
-					text-indent: -12px;
+					text-indent: -9px;
+					z-index: 4;
 					&:before {
 						left: 3px;
 					}
@@ -271,7 +276,7 @@
 
 				&:before {
 					top: -17px;
-					left: 0;
+					left: 50%;
 					width: 1px;
 					height: 5px;
 				}
