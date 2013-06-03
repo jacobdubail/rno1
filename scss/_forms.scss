@@ -38,6 +38,10 @@ input[type=button]:hover { color: #fbfbfb; background: #00BDF2; }
   margin: 7px 0 17px;
   color: #444;
   width: 85%;
+
+  p {
+    font-size: 15px;
+  }
 }
 
 .gform_heading .gform_description span,#gforms_confirmation_message span {

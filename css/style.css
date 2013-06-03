@@ -1524,6 +1524,8 @@ input[type=button]:hover {
   margin: 7px 0 17px;
   color: #444;
   width: 85%; }
+  .gform_heading .gform_description p, #gforms_confirmation_message p {
+    font-size: 15px; }
 
 .gform_heading .gform_description span, #gforms_confirmation_message span {
   font-size: 18px;
