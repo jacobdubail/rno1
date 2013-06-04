@@ -140,6 +140,10 @@
 			}	
 		}
 
+		&:checked label {
+			color: red;
+		}
+
 		&:checked + label span {
 			@extend .icon-ok;
 			color: #fff;

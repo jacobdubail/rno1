@@ -129,7 +129,7 @@
     });
 
     $("body").on('click', function(e) {
-      console.log( e.target.nodeName.toLowerCase() );
+      //console.log( e.target.nodeName.toLowerCase() );
       var nodeNames = [ 'legend', 'fieldset' ];
 
       if ( -1 !== $.inArray( e.target.nodeName.toLowerCase(), nodeNames ) ) {
