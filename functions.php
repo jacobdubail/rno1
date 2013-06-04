@@ -1,4 +1,4 @@
-jquery-ui<?php
+<?php
 
 register_sidebar( array(
     'name' => 'Sidebar Widgets',
