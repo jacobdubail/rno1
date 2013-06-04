@@ -140,7 +140,7 @@
 			}	
 		}
 
-		&:checked label {
+		&:checked + label {
 			color: red;
 		}
 

@@ -2859,8 +2859,8 @@ button.ui-button::-moz-focus-inner {
         background: #fff;
         margin-right: .5em;
         border: none; }
-    #gform_wrapper_3 input[type=radio]:checked label,
-    #gform_wrapper_3 input[type=checkbox]:checked label {
+    #gform_wrapper_3 input[type=radio]:checked + label,
+    #gform_wrapper_3 input[type=checkbox]:checked + label {
       color: red; }
     #gform_wrapper_3 input[type=radio]:checked + label span,
     #gform_wrapper_3 input[type=checkbox]:checked + label span {
