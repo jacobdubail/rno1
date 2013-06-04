@@ -139,6 +139,7 @@
 
     $("#gform_wrapper_3").on( 'change', 'input:checkbox, input:radio', function() {
       $(this).toggleClass('checked');
+      console.log($(this));
     });
 
 
