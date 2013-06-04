@@ -93,7 +93,7 @@
       $("<li>", {
         'data-value': $this.val(),
         text: $this.text()
-      }).prependTo(labels);
+      }).prependTo(labels).first().addClass("first-child").end().last().addClass("last-child");
     });
 
     labels.on( 'click', 'li', function() {
