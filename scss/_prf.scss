@@ -140,10 +140,10 @@
 			}	
 		}
 		
-		&.checked + label,
-		&:checked + label {
-			color: red;
-		}
+		// &.checked + label,
+		// &:checked + label {
+		// 	color: red;
+		// }
 		
 		&.checked + label span,
 		&:checked + label span {
