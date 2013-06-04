@@ -139,11 +139,13 @@
 				border: none;
 			}	
 		}
-
+		
+		&.checked + label,
 		&:checked + label {
 			color: red;
 		}
-
+		
+		&.checked + label span,
 		&:checked + label span {
 			@extend .icon-ok;
 			color: #fff;
@@ -375,6 +377,7 @@
 			white-space: normal;
 			display: block;
 		}
+		input.checked + label,
 		input:checked + label {
 			span {
 				background: #fff;

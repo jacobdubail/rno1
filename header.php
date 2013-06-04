@@ -29,11 +29,10 @@
 
   <!--[if (lt IE 9) & (!IEMobile)]>
     <script src="<?php echo get_template_directory_uri(); ?>/js/selectivizr.min.js"></script>
-    
+    <script src="<?php echo get_template_directory_uri(); ?>/js/respond.min.js"></script>
   <![endif]-->
 
-  
-  <!-- <script src="<?php echo get_template_directory_uri(); ?>/js/respond.min.js"></script> -->
+
   <!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/no_mq.css"> -->
 
 </head>

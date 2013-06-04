@@ -137,6 +137,10 @@
       }
     });
 
+    $("#gform_wrapper_3").on( 'change', 'input:checkbox', function() {
+      $(this).toggleClass('checked');
+    });
+
 
 
   });
