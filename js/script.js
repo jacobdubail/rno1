@@ -137,7 +137,7 @@
       }
     });
 
-    $("#gform_wrapper_3").on( 'change', 'input:checkbox', function() {
+    $("#gform_wrapper_3").on( 'change', 'input:checkbox, input:radio', function() {
       $(this).toggleClass('checked');
     });
 
