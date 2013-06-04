@@ -1,4 +1,4 @@
-<?php
+jquery-ui<?php
 
 register_sidebar( array(
     'name' => 'Sidebar Widgets',
@@ -66,7 +66,7 @@ function rno1_register_scripts() {
 
   wp_enqueue_script( 'jquery' );
 
-  if ( is_page( 'meet-project-pal' ) ) {
+  if ( is_page( 'request-a-quote' ) ) {
     wp_enqueue_script( 'jquery-ui-slider' );
   }
 
