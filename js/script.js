@@ -93,14 +93,14 @@
       $("<li>", {
         'data-value': $this.val(),
         text: $this.text()
-      }).prependTo(labels).first().addClass("first-child").end().last().addClass("last-child");
+      }).prependTo(labels);
     });
 
     labels.on( 'click', 'li', function() {
       var $this = $(this);
       $budget[ 0 ].selectedIndex = $this.data('value') / 5000 - 1;
       $budget.trigger('change');
-    });
+    }).find('li').first().addClass("first-child").end().last().addClass("last-child");
 
     $budget.change(function() {
       slider.slider( "value", ( this.selectedIndex + 1 ) * 5000 );
