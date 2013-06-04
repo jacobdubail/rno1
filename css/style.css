@@ -2983,24 +2983,24 @@ button.ui-button::-moz-focus-inner {
           text-indent: 0;
           left: -5.555%;
           z-index: 5; }
-          #gform_wrapper_3 #labels li:first-child {
+          #gform_wrapper_3 #labels li.first-child, #gform_wrapper_3 #labels li:first-child {
             position: absolute;
             right: -22px;
             z-index: 100;
             text-align: right;
             text-indent: 0;
             left: auto; }
-            #gform_wrapper_3 #labels li:first-child:before {
+            #gform_wrapper_3 #labels li.first-child:before, #gform_wrapper_3 #labels li:first-child:before {
               right: 22px;
               left: auto;
               z-index: -1; }
-          #gform_wrapper_3 #labels li:last-child {
+          #gform_wrapper_3 #labels li.last-child, #gform_wrapper_3 #labels li:last-child {
             top: 0;
             left: 0;
             text-align: left;
             text-indent: -9px;
             z-index: 4; }
-            #gform_wrapper_3 #labels li:last-child:before {
+            #gform_wrapper_3 #labels li.last-child:before, #gform_wrapper_3 #labels li:last-child:before {
               left: 3px; }
           #gform_wrapper_3 #labels li:before {
             top: -17px;

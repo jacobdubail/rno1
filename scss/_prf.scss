@@ -299,7 +299,8 @@
 				text-indent: 0;
 				left: -5.555%;
 				z-index: 5;
-
+				
+				&.first-child,
 				&:first-child {
 					position: absolute;
 					right: -22px;
@@ -314,6 +315,7 @@
 					}
 				}
 				
+				&.last-child,
 				&:last-child {
 					top: 0;
 					left: 0;
