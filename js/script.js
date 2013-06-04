@@ -122,9 +122,8 @@
     $(".dropdown").each(function() {
       var $this = $(this);
       $("<span />", {
-        text: '\u00D7',
-        class: 'close'
-      }).appendTo( $this ).on('click', function() {
+        text: '\u00D7'
+      }).addClass('close').appendTo( $this ).on('click', function() {
         $(this).parent().hide();
       });
     });
