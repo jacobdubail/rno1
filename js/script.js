@@ -141,6 +141,8 @@
       $(this).prev().toggleClass('checked');
     });
 
+    $(".gf_browser_gecko").find('legend').css('top', '4em');
+
 
 
   });
