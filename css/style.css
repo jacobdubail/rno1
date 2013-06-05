@@ -2754,6 +2754,12 @@ button.ui-button::-moz-focus-inner {
   margin: -1px;
   height: 100%; }
 
+@-moz-document url-prefix() {
+  legend span {
+    position: absolute;
+    top: 4em !important;
+    left: 0 !important; } }
+
 #gform_wrapper_3 {
   margin: 2em 0; }
   #gform_wrapper_3 .gform_fields {
