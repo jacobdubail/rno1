@@ -339,7 +339,7 @@
 		}
 	}
 
-	.gf_browser_safari #labels {
+	&.gf_browser_safari #labels {
 		@include breakpoint( meerkat ) {
 			li {
 				width: 11.2%;

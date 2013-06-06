@@ -3010,9 +3010,9 @@ button.ui-button::-moz-focus-inner {
             width: 1px;
             height: 5px; } }
   @media (min-width: 767px) {
-    #gform_wrapper_3 .gf_browser_safari #labels li {
+    #gform_wrapper_3.gf_browser_safari #labels li {
       width: 11.2%; }
-    #gform_wrapper_3 .gf_browser_safari #labels li:last-child {
+    #gform_wrapper_3.gf_browser_safari #labels li:last-child {
       position: absolute; } }
   #gform_wrapper_3 .dropdown {
     position: absolute;
