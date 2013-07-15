@@ -30,7 +30,7 @@
       $new     = NULL;
 
       if ( ( strtotime("now") - strtotime( $date ) ) < $month ) {
-        $new   = "new_project";
+        $new   = " new_project";
       } else {
         $new   = false;
       }
@@ -39,7 +39,7 @@
       $count   = count( $terms );
       $i       = 0;
       $types   = '';
-      $klasses = '';
+      $klasses = ' ';
       $cs      = false;
       if ( $terms ) :
         foreach( $terms as $cat ) {
