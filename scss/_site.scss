@@ -154,6 +154,11 @@ figure {
     padding-right: 0;
   }
 }
+
+.grid .post.col-1-3:last-of-type {
+  padding-right: $columnpad;
+}
+
 .col-2-3 {
   width: 100%;
   @include breakpoint(meerkat) {
