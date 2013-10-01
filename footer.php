@@ -33,7 +33,7 @@
 </script>
 
 <div id="awwwards" class="right white">
-  <a href="http://www.awwwards.com" target="_blank">best websites of the world</a>
+  <a href="http://www.awwwards.com/best-websites/rno1" target="_blank">best websites of the world</a>
 </div>
 
 </body>
