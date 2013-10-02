@@ -54,7 +54,7 @@
         <li><a href="#" data-filter="*" class="active">Our Work</a></li>
         <li><a href="#" data-filter=".case-study">Case Studies</a></li>
         <li><a href="#" data-filter=".branding">Branding</a></li>
-        <li><a href="#" data-filter=".website">Websites</a></li>
+        <li><a href="#" data-filter=".digital">Digital</a></li>
       </ul>
     <?php else : ?>
       <ul class="menu filters cf">
