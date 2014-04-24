@@ -4,8 +4,6 @@
     <?php dynamic_sidebar('Footer Widgets'); ?>
   </footer>
 
-
-
 </div>
 <div id="fb-root"></div>
 <?php wp_footer(); ?>
